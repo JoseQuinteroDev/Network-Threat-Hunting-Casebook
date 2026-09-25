@@ -1,0 +1,158 @@
+#cloud-config
+# Case 03 gateway: nftables firewall + Suricata IPS inline (NFQUEUE) + log shipping to Microsoft Sentinel.
+# Rendered by main.bicep, which replaces __RULES_DNS_B64__ and __RULES_CS_B64__ with the custom rules of
+# cases 01 and 02. Progress: /var/log/nthc-setup.log; completion marker: /var/lib/nthc/ready.
+
+package_update: true
+packages:
+  - nftables
+  - python3-yaml
+  - jq
+  - software-properties-common
+
+write_files:
+  - path: /etc/sysctl.d/99-nthc-forwarding.conf
+    content: |
+      net.ipv4.ip_forward = 1
+      # Two NICs in different subnets: loose reverse-path filtering
+      net.ipv4.conf.all.rp_filter = 2
+      net.ipv4.conf.default.rp_filter = 2
+
+  # The workload subnet is reached through eth1, not through the default route on eth0.
+  - path: /etc/netplan/60-nthc-routes.yaml
+    permissions: "0600"
+    content: |
+      network:
+        version: 2
+        ethernets:
+          eth1:
+            routes:
+              - to: 10.70.2.0/24
+                via: 10.70.1.1
+
+  - path: /etc/nftables.conf
+    content: |
+      #!/usr/sbin/nft -f
+      flush ruleset
+
+      table inet nthc {
+          set blocklist {
+              type ipv4_addr
+              comment "Indicators blocked during incident response"
+          }
+
+          chain input {
+              type filter hook input priority filter; policy drop;
+              ct state established,related accept
+              ct state invalid drop
+              iif "lo" accept
+              ip protocol icmp accept
+              udp sport 67 udp dport 68 accept
+              log prefix "NTHC-IN-DROP " level info counter drop
+          }
+
+          chain forward {
+              type filter hook forward priority filter; policy drop;
+              ip daddr @blocklist log prefix "NTHC-BLOCK " level warn counter drop
+              ip saddr @blocklist log prefix "NTHC-BLOCK " level warn counter drop
+              # Lab egress and its return traffic pass through Suricata (NFQUEUE 0). With "bypass" a stopped
+              # Suricata degrades to a plain firewall instead of cutting the lab off.
+              iifname "eth1" oifname "eth0" ip saddr 10.70.2.0/24 queue flags bypass to 0
+              iifname "eth0" oifname "eth1" ip daddr 10.70.2.0/24 ct state established,related queue flags bypass to 0
+              log prefix "NTHC-FWD-DROP " level info counter drop
+          }
+      }
+
+      table ip nthc_nat {
+          chain postrouting {
+              type nat hook postrouting priority srcnat; policy accept;
+              oifname "eth0" ip saddr 10.70.2.0/24 masquerade
+          }
+      }
+
+  - path: /etc/suricata/rules/nthc-dns-tunnel.rules
+    encoding: b64
+    content: __RULES_DNS_B64__
+
+  - path: /etc/suricata/rules/nthc-cobalt-strike.rules
+    encoding: b64
+    content: __RULES_CS_B64__
+
+  # Suricata's EVE JSON is read by rsyslog and tagged as facility local5; the Azure Monitor Agent forwards it.
+  - path: /etc/rsyslog.d/40-nthc-suricata.conf
+    content: |
+      module(load="imfile" PollingInterval="2")
+      input(type="imfile" File="/var/log/suricata/eve.json" Tag="suricata" Facility="local5"
+            Severity="info" freshStartTail="on")
+
+  - path: /etc/systemd/system/nthc-suricata.service
+    content: |
+      [Unit]
+      Description=Suricata IPS inline on NFQUEUE 0 (NTHC lab gateway)
+      After=network-online.target nftables.service
+      Wants=network-online.target
+
+      [Service]
+      Type=simple
+      ExecStart=/usr/bin/suricata -q 0 -c /etc/suricata/suricata.yaml --pidfile /run/nthc-suricata.pid
+      ExecReload=/bin/kill -USR2 $MAINPID
+      Restart=on-failure
+      RestartSec=5
+
+      [Install]
+      WantedBy=multi-user.target
+
+  - path: /usr/local/sbin/nthc-configure-suricata.py
+    permissions: "0755"
+    content: |
+      #!/usr/bin/env python3
+      """Point Suricata at the lab network, keep EVE to the events the SOC uses, run inline on NFQUEUE."""
+      import shutil
+      import subprocess
+      import sys
+      import yaml
+
+      PATH = "/etc/suricata/suricata.yaml"
+      shutil.copy(PATH, PATH + ".orig")
+      cfg = yaml.safe_load(open(PATH))
+      cfg["vars"]["address-groups"]["HOME_NET"] = "[10.70.0.0/16]"
+      cfg["default-rule-path"] = "/var/lib/suricata/rules"
+      cfg["rule-files"] = ["suricata.rules"]
+      cfg["nfq"] = {"mode": "accept", "fail-open": True}
+      for output in cfg["outputs"]:
+          if "eve-log" in output:
+              eve = output["eve-log"]
+              eve.update({"enabled": True, "filetype": "regular", "filename": "eve.json", "community-id": True})
+              eve["types"] = [
+                  {"alert": {"tagged-packets": False}},
+                  {"http": {"extended": True}},
+                  {"dns": {"enabled": True}},
+                  {"tls": {"extended": True}},
+              ]
+      with open(PATH, "w") as fh:
+          fh.write("%YAML 1.1\n---\n")
+          yaml.safe_dump(cfg, fh, sort_keys=False, default_flow_style=False)
+      test = subprocess.run(["suricata", "-T", "-c", PATH], capture_output=True, text=True)
+      if test.returncode != 0:
+          shutil.copy(PATH + ".orig", PATH)
+          print(test.stdout[-2000:], test.stderr[-2000:], file=sys.stderr)
+          sys.exit("suricata.yaml rejected, original restored")
+      print("suricata.yaml configured and validated")
+
+runcmd:
+  - mkdir -p /var/lib/nthc
+  - echo "start $(date -u +%FT%TZ)" >> /var/log/nthc-setup.log
+  - netplan apply >> /var/log/nthc-setup.log 2>&1
+  - sysctl --system >> /var/log/nthc-setup.log 2>&1
+  - add-apt-repository -y ppa:oisf/suricata-stable >> /var/log/nthc-setup.log 2>&1
+  - apt-get update >> /var/log/nthc-setup.log 2>&1
+  - DEBIAN_FRONTEND=noninteractive apt-get install -y suricata >> /var/log/nthc-setup.log 2>&1
+  - systemctl disable --now suricata >> /var/log/nthc-setup.log 2>&1 || true
+  - suricata-update --no-test --local /etc/suricata/rules/nthc-dns-tunnel.rules --local /etc/suricata/rules/nthc-cobalt-strike.rules >> /var/log/nthc-setup.log 2>&1
+  - python3 /usr/local/sbin/nthc-configure-suricata.py >> /var/log/nthc-setup.log 2>&1
+  - systemctl enable --now nftables >> /var/log/nthc-setup.log 2>&1
+  - systemctl daemon-reload
+  - systemctl enable --now nthc-suricata >> /var/log/nthc-setup.log 2>&1
+  - systemctl restart rsyslog >> /var/log/nthc-setup.log 2>&1
+  - echo "done $(date -u +%FT%TZ)" >> /var/log/nthc-setup.log
+  - touch /var/lib/nthc/ready

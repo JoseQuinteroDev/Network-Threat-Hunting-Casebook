@@ -1,0 +1,5 @@
+# Custom rules for the Network Threat Hunting Casebook. SID range 9100000-9199999 (local use).
+#
+# Long hex-encoded leftmost label: data encoded into query names. One alert per source per hour once
+# 50 such queries have been seen, so a tunnel produces one alert per hour instead of thousands.
+alert dns $HOME_NET any -> any any (msg:"NTHC DNS query with long hex-encoded label (possible DNS tunnel)"; dns.query; pcre:"/^[0-9a-f]{30,}\./i"; threshold:type both, track by_src, count 50, seconds 3600; classtype:bad-unknown; sid:9100001; rev:1;)

@@ -1,0 +1,333 @@
+{
+ "thresholds": {
+  "unique_subdomains_per_hour": 50,
+  "mean_subdomain_len": 20.0,
+  "mean_entropy": 3.0
+ },
+ "pairs": [
+  {
+   "client": "10.20.57.3",
+   "base_domain": "cisco-update.com",
+   "queries": 165517,
+   "unique_subdomains": 165378,
+   "peak_hour_unique_subdomains": 6961,
+   "mean_subdomain_len": 34.0,
+   "max_subdomain_len": 164,
+   "mean_entropy": 3.63,
+   "hex_only_share": 1.0,
+   "qtypes": {
+    "MX": 55359,
+    "CNAME": 55080,
+    "TXT": 55073,
+    "-": 5
+   },
+   "rcodes": {
+    "NOERROR": 165401,
+    "-": 115,
+    "SERVFAIL": 1
+   },
+   "upstream_bytes_est": 2813917,
+   "answer_chars": 7883985,
+   "first_ts": 1623212924.825154,
+   "last_ts": 1623299324.282609,
+   "median_gap_s": 0.509,
+   "flagged": true
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "opensuse.org",
+   "queries": 80,
+   "unique_subdomains": 7,
+   "peak_hour_unique_subdomains": 7,
+   "mean_subdomain_len": 17.6,
+   "max_subdomain_len": 26,
+   "mean_entropy": 3.17,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "SRV": 68,
+    "A": 6,
+    "AAAA": 6
+   },
+   "rcodes": {
+    "NXDOMAIN": 68,
+    "NOERROR": 12
+   },
+   "upstream_bytes_est": 740,
+   "answer_chars": 424,
+   "first_ts": 1623236567.933728,
+   "last_ts": 1623295196.730843,
+   "median_gap_s": 0.004,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "ubuntu.com",
+   "queries": 1134,
+   "unique_subdomains": 4,
+   "peak_hour_unique_subdomains": 4,
+   "mean_subdomain_len": 16.5,
+   "max_subdomain_len": 21,
+   "mean_entropy": 3.25,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 868,
+    "A": 242,
+    "SRV": 24
+   },
+   "rcodes": {
+    "NOERROR": 1114,
+    "NXDOMAIN": 20
+   },
+   "upstream_bytes_est": 10146,
+   "answer_chars": 9644,
+   "first_ts": 1623212929.96008,
+   "last_ts": 1623299228.054693,
+   "median_gap_s": 0.676,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "rhodes.edu",
+   "queries": 6816,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 15.5,
+   "max_subdomain_len": 29,
+   "mean_entropy": 2.29,
+   "hex_only_share": 0.5,
+   "qtypes": {
+    "AAAA": 6816
+   },
+   "rcodes": {
+    "NXDOMAIN": 6816
+   },
+   "upstream_bytes_est": 21216,
+   "answer_chars": 0,
+   "first_ts": 1623212929.966673,
+   "last_ts": 1623299298.32111,
+   "median_gap_s": 0.086,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "snapcraft.io",
+   "queries": 25,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 11.0,
+   "max_subdomain_len": 19,
+   "mean_entropy": 2.5,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 18,
+    "A": 7
+   },
+   "rcodes": {
+    "NOERROR": 25
+   },
+   "upstream_bytes_est": 52,
+   "answer_chars": 456,
+   "first_ts": 1623219016.666016,
+   "last_ts": 1623281739.736745,
+   "median_gap_s": 4.951,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "launchpad.net",
+   "queries": 27,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 8.5,
+   "max_subdomain_len": 14,
+   "mean_entropy": 1.64,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "SRV": 20,
+    "A": 4,
+    "AAAA": 3
+   },
+   "rcodes": {
+    "NXDOMAIN": 20,
+    "NOERROR": 7
+   },
+   "upstream_bytes_est": 130,
+   "answer_chars": 114,
+   "first_ts": 1623236567.934126,
+   "last_ts": 1623295196.730685,
+   "median_gap_s": 0.004,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "docker.com",
+   "queries": 28,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 14.0,
+   "max_subdomain_len": 20,
+   "mean_entropy": 2.98,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "SRV": 20,
+    "A": 4,
+    "AAAA": 4
+   },
+   "rcodes": {
+    "NXDOMAIN": 20,
+    "NOERROR": 8
+   },
+   "upstream_bytes_est": 212,
+   "answer_chars": 1557,
+   "first_ts": 1623236567.933575,
+   "last_ts": 1623295196.728572,
+   "median_gap_s": 0.004,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "mongodb.org",
+   "queries": 26,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 10.0,
+   "max_subdomain_len": 16,
+   "mean_entropy": 2.49,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "SRV": 20,
+    "A": 3,
+    "AAAA": 3
+   },
+   "rcodes": {
+    "NXDOMAIN": 20,
+    "NOERROR": 6
+   },
+   "upstream_bytes_est": 152,
+   "answer_chars": 1192,
+   "first_ts": 1623236567.933862,
+   "last_ts": 1623295196.739078,
+   "median_gap_s": 0.019,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "canonical.com",
+   "queries": 15,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 6.0,
+   "max_subdomain_len": 7,
+   "mean_entropy": 2.42,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 11,
+    "A": 4
+   },
+   "rcodes": {
+    "NOERROR": 15
+   },
+   "upstream_bytes_est": 49,
+   "answer_chars": 48,
+   "first_ts": 1623236567.998745,
+   "last_ts": 1623295196.782726,
+   "median_gap_s": 13.429,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "cloudfront.net",
+   "queries": 4,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 14.0,
+   "max_subdomain_len": 14,
+   "mean_entropy": 3.52,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 2,
+    "A": 2
+   },
+   "rcodes": {
+    "NOERROR": 4
+   },
+   "upstream_bytes_est": 28,
+   "answer_chars": 672,
+   "first_ts": 1623236628.238977,
+   "last_ts": 1623236628.264282,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "fwupd.org",
+   "queries": 2,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 1,
+    "AAAA": 1
+   },
+   "rcodes": {
+    "NOERROR": 2
+   },
+   "upstream_bytes_est": 3,
+   "answer_chars": 107,
+   "first_ts": 1623236567.050472,
+   "last_ts": 1623236567.050629,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "fastly.net",
+   "queries": 1,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 16.0,
+   "max_subdomain_len": 16,
+   "mean_entropy": 3.52,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 1
+   },
+   "rcodes": {
+    "NOERROR": 1
+   },
+   "upstream_bytes_est": 7,
+   "answer_chars": 0,
+   "first_ts": 1623236567.071752,
+   "last_ts": 1623236567.071752,
+   "median_gap_s": null,
+   "flagged": false
+  },
+  {
+   "client": "10.20.57.3",
+   "base_domain": "gnome.org",
+   "queries": 2,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 4.0,
+   "max_subdomain_len": 4,
+   "mean_entropy": 2.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 1,
+    "A": 1
+   },
+   "rcodes": {
+    "NOERROR": 2
+   },
+   "upstream_bytes_est": 4,
+   "answer_chars": 155,
+   "first_ts": 1623236591.802949,
+   "last_ts": 1623236591.803064,
+   "median_gap_s": 0.0,
+   "flagged": false
+  }
+ ]
+}

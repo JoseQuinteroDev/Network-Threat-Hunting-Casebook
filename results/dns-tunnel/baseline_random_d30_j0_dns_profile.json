@@ -1,0 +1,1089 @@
+{
+ "thresholds": {
+  "unique_subdomains_per_hour": 50,
+  "mean_subdomain_len": 20.0,
+  "mean_entropy": 3.0
+ },
+ "pairs": [
+  {
+   "client": "192.168.2.77",
+   "base_domain": "microsoft.com",
+   "queries": 239,
+   "unique_subdomains": 22,
+   "peak_hour_unique_subdomains": 16,
+   "mean_subdomain_len": 17.3,
+   "max_subdomain_len": 35,
+   "mean_entropy": 3.04,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 201,
+    "HTTPS": 38
+   },
+   "rcodes": {
+    "NOERROR": 238,
+    "NXDOMAIN": 1
+   },
+   "upstream_bytes_est": 1378,
+   "answer_chars": 19572,
+   "first_ts": 1724440656.154044,
+   "last_ts": 1724525745.05801,
+   "median_gap_s": 131.991,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "microsoft.com",
+   "queries": 204,
+   "unique_subdomains": 16,
+   "peak_hour_unique_subdomains": 13,
+   "mean_subdomain_len": 16.4,
+   "max_subdomain_len": 26,
+   "mean_entropy": 3.18,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 204
+   },
+   "rcodes": {
+    "NOERROR": 204
+   },
+   "upstream_bytes_est": 1520,
+   "answer_chars": 23836,
+   "first_ts": 1724439696.872493,
+   "last_ts": 1724525107.300883,
+   "median_gap_s": 228.899,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.79",
+   "base_domain": "microsoft.com",
+   "queries": 175,
+   "unique_subdomains": 14,
+   "peak_hour_unique_subdomains": 9,
+   "mean_subdomain_len": 16.6,
+   "max_subdomain_len": 27,
+   "mean_entropy": 3.09,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 175
+   },
+   "rcodes": {
+    "NOERROR": 175
+   },
+   "upstream_bytes_est": 1297,
+   "answer_chars": 17630,
+   "first_ts": 1724439700.186621,
+   "last_ts": 1724525205.922796,
+   "median_gap_s": 522.517,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.19",
+   "base_domain": "ubuntu.com",
+   "queries": 24788,
+   "unique_subdomains": 6,
+   "peak_hour_unique_subdomains": 5,
+   "mean_subdomain_len": 14.3,
+   "max_subdomain_len": 21,
+   "mean_entropy": 3.1,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 12390,
+    "A": 12390,
+    "SRV": 8
+   },
+   "rcodes": {
+    "-": 12394,
+    "NOERROR": 12390,
+    "NXDOMAIN": 4
+   },
+   "upstream_bytes_est": 223036,
+   "answer_chars": 2322353,
+   "first_ts": 1724439604.435823,
+   "last_ts": 1724525989.43554,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "windowsupdate.com",
+   "queries": 61,
+   "unique_subdomains": 3,
+   "peak_hour_unique_subdomains": 3,
+   "mean_subdomain_len": 8.7,
+   "max_subdomain_len": 13,
+   "mean_entropy": 2.45,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 61
+   },
+   "rcodes": {
+    "NOERROR": 61
+   },
+   "upstream_bytes_est": 175,
+   "answer_chars": 8500,
+   "first_ts": 1724441177.729428,
+   "last_ts": 1724525745.41627,
+   "median_gap_s": 1259.038,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.79",
+   "base_domain": "windowsupdate.com",
+   "queries": 49,
+   "unique_subdomains": 4,
+   "peak_hour_unique_subdomains": 3,
+   "mean_subdomain_len": 9.8,
+   "max_subdomain_len": 13,
+   "mean_entropy": 2.56,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 49
+   },
+   "rcodes": {
+    "NOERROR": 49
+   },
+   "upstream_bytes_est": 133,
+   "answer_chars": 6757,
+   "first_ts": 1724441560.336911,
+   "last_ts": 1724525540.592828,
+   "median_gap_s": 1483.77,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "bing.com",
+   "queries": 12,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 2.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 12
+   },
+   "rcodes": {
+    "NOERROR": 12
+   },
+   "upstream_bytes_est": 14,
+   "answer_chars": 1625,
+   "first_ts": 1724443343.031728,
+   "last_ts": 1724518941.00393,
+   "median_gap_s": 8100.715,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.19",
+   "base_domain": "docker.com",
+   "queries": 8,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 14.0,
+   "max_subdomain_len": 20,
+   "mean_entropy": 2.98,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "SRV": 4,
+    "A": 2,
+    "AAAA": 2
+   },
+   "rcodes": {
+    "-": 4,
+    "NXDOMAIN": 2,
+    "NOERROR": 2
+   },
+   "upstream_bytes_est": 52,
+   "answer_chars": 395,
+   "first_ts": 1724473047.921658,
+   "last_ts": 1724473047.942727,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.19",
+   "base_domain": "expressvpn.com",
+   "queries": 8,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 10.0,
+   "max_subdomain_len": 16,
+   "mean_entropy": 2.49,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "SRV": 4,
+    "A": 2,
+    "AAAA": 2
+   },
+   "rcodes": {
+    "-": 4,
+    "NXDOMAIN": 2,
+    "NOERROR": 2
+   },
+   "upstream_bytes_est": 36,
+   "answer_chars": 401,
+   "first_ts": 1724473047.934034,
+   "last_ts": 1724473047.99761,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "live.com",
+   "queries": 11,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 5,
+   "mean_entropy": 1.16,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 11
+   },
+   "rcodes": {
+    "NOERROR": 11
+   },
+   "upstream_bytes_est": 19,
+   "answer_chars": 1734,
+   "first_ts": 1724443342.680689,
+   "last_ts": 1724522361.387356,
+   "median_gap_s": 7067.195,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "msecnd.net",
+   "queries": 6,
+   "unique_subdomains": 2,
+   "peak_hour_unique_subdomains": 2,
+   "mean_subdomain_len": 11.0,
+   "max_subdomain_len": 11,
+   "mean_entropy": 3.12,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 6
+   },
+   "rcodes": {
+    "NOERROR": 6
+   },
+   "upstream_bytes_est": 30,
+   "answer_chars": 504,
+   "first_ts": 1724464721.674695,
+   "last_ts": 1724509762.700983,
+   "median_gap_s": 13.244,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.19",
+   "base_domain": "expressapisv2.net",
+   "queries": 5766,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 5476,
+    "A": 290
+   },
+   "rcodes": {
+    "NOERROR": 2883,
+    "-": 2883
+   },
+   "upstream_bytes_est": 873,
+   "answer_chars": 15242,
+   "first_ts": 1724439750.480945,
+   "last_ts": 1724525550.549146,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "windowsupdate.com",
+   "queries": 32,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 5.0,
+   "max_subdomain_len": 5,
+   "mean_entropy": 1.92,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 32
+   },
+   "rcodes": {
+    "NOERROR": 32
+   },
+   "upstream_bytes_est": 80,
+   "answer_chars": 4703,
+   "first_ts": 1724441830.665466,
+   "last_ts": 1724524756.699591,
+   "median_gap_s": 3243.533,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "msn.com",
+   "queries": 5,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 5
+   },
+   "rcodes": {
+    "NOERROR": 5
+   },
+   "upstream_bytes_est": 7,
+   "answer_chars": 449,
+   "first_ts": 1724451473.412004,
+   "last_ts": 1724516241.397586,
+   "median_gap_s": 17704.551,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "sfx.ms",
+   "queries": 4,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 9.0,
+   "max_subdomain_len": 9,
+   "mean_entropy": 2.73,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 4
+   },
+   "rcodes": {
+    "NOERROR": 4
+   },
+   "upstream_bytes_est": 18,
+   "answer_chars": 268,
+   "first_ts": 1724473545.683286,
+   "last_ts": 1724507702.802169,
+   "median_gap_s": 5694.682,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "office.com",
+   "queries": 4,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 4
+   },
+   "rcodes": {
+    "NOERROR": 4
+   },
+   "upstream_bytes_est": 6,
+   "answer_chars": 523,
+   "first_ts": 1724469960.418847,
+   "last_ts": 1724513161.008901,
+   "median_gap_s": 5694.711,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.79",
+   "base_domain": "office.com",
+   "queries": 24,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 24
+   },
+   "rcodes": {
+    "NOERROR": 24
+   },
+   "upstream_bytes_est": 36,
+   "answer_chars": 3024,
+   "first_ts": 1724441992.996946,
+   "last_ts": 1724525480.525464,
+   "median_gap_s": 3601.17,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "slack.com",
+   "queries": 104,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 0.92,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 52,
+    "HTTPS": 52
+   },
+   "rcodes": {
+    "NOERROR": 104
+   },
+   "upstream_bytes_est": 84,
+   "answer_chars": 5616,
+   "first_ts": 1724442814.31248,
+   "last_ts": 1724525617.088554,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "office.com",
+   "queries": 24,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 24
+   },
+   "rcodes": {
+    "NOERROR": 24
+   },
+   "upstream_bytes_est": 36,
+   "answer_chars": 2931,
+   "first_ts": 1724442874.21718,
+   "last_ts": 1724525685.383265,
+   "median_gap_s": 3600.194,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "live.com",
+   "queries": 4,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 5.0,
+   "max_subdomain_len": 5,
+   "mean_entropy": 2.32,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 4
+   },
+   "rcodes": {
+    "NOERROR": 4
+   },
+   "upstream_bytes_est": 10,
+   "answer_chars": 856,
+   "first_ts": 1724451352.894114,
+   "last_ts": 1724503684.373051,
+   "median_gap_s": 17839.447,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "digicert.com",
+   "queries": 4,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 4.0,
+   "max_subdomain_len": 4,
+   "mean_entropy": 2.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 4
+   },
+   "rcodes": {
+    "NOERROR": 4
+   },
+   "upstream_bytes_est": 8,
+   "answer_chars": 336,
+   "first_ts": 1724451473.121526,
+   "last_ts": 1724507960.554216,
+   "median_gap_s": 24758.971,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "pki.goog",
+   "queries": 8,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 1.0,
+   "max_subdomain_len": 1,
+   "mean_entropy": 0.0,
+   "hex_only_share": 1.0,
+   "qtypes": {
+    "A": 8
+   },
+   "rcodes": {
+    "NOERROR": 8
+   },
+   "upstream_bytes_est": 4,
+   "answer_chars": 268,
+   "first_ts": 1724443403.050837,
+   "last_ts": 1724522421.88436,
+   "median_gap_s": 13877.676,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "msedge.net",
+   "queries": 8,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 9.0,
+   "max_subdomain_len": 9,
+   "mean_entropy": 2.95,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 8
+   },
+   "rcodes": {
+    "NOERROR": 8
+   },
+   "upstream_bytes_est": 36,
+   "answer_chars": 680,
+   "first_ts": 1724448438.210457,
+   "last_ts": 1724524938.559241,
+   "median_gap_s": 10920.531,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "skype.com",
+   "queries": 18,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 11.0,
+   "max_subdomain_len": 11,
+   "mean_entropy": 2.92,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 10,
+    "HTTPS": 8
+   },
+   "rcodes": {
+    "NOERROR": 18
+   },
+   "upstream_bytes_est": 90,
+   "answer_chars": 2226,
+   "first_ts": 1724459806.214775,
+   "last_ts": 1724525616.48038,
+   "median_gap_s": 300.004,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.19",
+   "base_domain": "snapcraft.io",
+   "queries": 22,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "AAAA": 12,
+    "A": 10
+   },
+   "rcodes": {
+    "NOERROR": 11,
+    "-": 11
+   },
+   "upstream_bytes_est": 33,
+   "answer_chars": 280,
+   "first_ts": 1724452613.450768,
+   "last_ts": 1724516813.450897,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "skype.com",
+   "queries": 3,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 11.0,
+   "max_subdomain_len": 11,
+   "mean_entropy": 2.92,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 3
+   },
+   "rcodes": {
+    "NOERROR": 3
+   },
+   "upstream_bytes_est": 15,
+   "answer_chars": 430,
+   "first_ts": 1724446691.284583,
+   "last_ts": 1724518657.979405,
+   "median_gap_s": 35983.347,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "frijrfijerfoiejrfjio.com",
+   "queries": 2,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 2
+   },
+   "rcodes": {
+    "NXDOMAIN": 2
+   },
+   "upstream_bytes_est": 3,
+   "answer_chars": 0,
+   "first_ts": 1724482979.436719,
+   "last_ts": 1724482979.436719,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.79",
+   "base_domain": "skype.com",
+   "queries": 3,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 11.0,
+   "max_subdomain_len": 11,
+   "mean_entropy": 2.92,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 3
+   },
+   "rcodes": {
+    "NOERROR": 3
+   },
+   "upstream_bytes_est": 15,
+   "answer_chars": 393,
+   "first_ts": 1724446021.808661,
+   "last_ts": 1724519141.566253,
+   "median_gap_s": 36559.879,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "exp-tas.com",
+   "queries": 2,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 7.0,
+   "max_subdomain_len": 7,
+   "mean_entropy": 2.81,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 2
+   },
+   "rcodes": {
+    "NOERROR": 2
+   },
+   "upstream_bytes_est": 7,
+   "answer_chars": 136,
+   "first_ts": 1724440462.60425,
+   "last_ts": 1724483659.662864,
+   "median_gap_s": 43197.059,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "msedge.net",
+   "queries": 4,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 23.0,
+   "max_subdomain_len": 23,
+   "mean_entropy": 3.52,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 4
+   },
+   "rcodes": {
+    "NOERROR": 4
+   },
+   "upstream_bytes_est": 46,
+   "answer_chars": 336,
+   "first_ts": 1724464721.698645,
+   "last_ts": 1724509762.715511,
+   "median_gap_s": 272.835,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "trafficmanager.net",
+   "queries": 7,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 24.0,
+   "max_subdomain_len": 24,
+   "mean_entropy": 3.57,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 7
+   },
+   "rcodes": {
+    "NOERROR": 7
+   },
+   "upstream_bytes_est": 84,
+   "answer_chars": 1069,
+   "first_ts": 1724464721.911059,
+   "last_ts": 1724509776.275007,
+   "median_gap_s": 13.361,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.79",
+   "base_domain": "live.com",
+   "queries": 3,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 5.0,
+   "max_subdomain_len": 5,
+   "mean_entropy": 2.32,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 3
+   },
+   "rcodes": {
+    "NOERROR": 3
+   },
+   "upstream_bytes_est": 7,
+   "answer_chars": 632,
+   "first_ts": 1724454265.824784,
+   "last_ts": 1724516205.722848,
+   "median_gap_s": 30969.949,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.19",
+   "base_domain": "fwupd.org",
+   "queries": 4,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 3.0,
+   "max_subdomain_len": 3,
+   "mean_entropy": 1.58,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 2,
+    "AAAA": 2
+   },
+   "rcodes": {
+    "NOERROR": 2,
+    "-": 2
+   },
+   "upstream_bytes_est": 6,
+   "answer_chars": 105,
+   "first_ts": 1724443736.231265,
+   "last_ts": 1724443736.231439,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "windows.com",
+   "queries": 1,
+   "unique_subdomains": 1,
+   "peak_hour_unique_subdomains": 1,
+   "mean_subdomain_len": 4.0,
+   "max_subdomain_len": 4,
+   "mean_entropy": 2.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 1
+   },
+   "rcodes": {
+    "NOERROR": 1
+   },
+   "upstream_bytes_est": 2,
+   "answer_chars": 35,
+   "first_ts": 1724462699.58766,
+   "last_ts": 1724462699.58766,
+   "median_gap_s": null,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.82",
+   "base_domain": "wpad.home",
+   "queries": 288,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 288
+   },
+   "rcodes": {
+    "NXDOMAIN": 288
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724439691.254441,
+   "last_ts": 1724525492.804507,
+   "median_gap_s": 0.061,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.79",
+   "base_domain": "wpad.home",
+   "queries": 288,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 288
+   },
+   "rcodes": {
+    "NXDOMAIN": 288
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724439788.770331,
+   "last_ts": 1724525592.235602,
+   "median_gap_s": 0.0,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "wpad.home",
+   "queries": 162,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 162
+   },
+   "rcodes": {
+    "NXDOMAIN": 162
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724440169.952369,
+   "last_ts": 1724525971.692126,
+   "median_gap_s": 600.011,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "weathersync.cloud",
+   "queries": 33,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 33
+   },
+   "rcodes": {
+    "NOERROR": 33
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 462,
+   "first_ts": 1724440580.824148,
+   "last_ts": 1724525548.846208,
+   "median_gap_s": 1349.478,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "timeserversync.com",
+   "queries": 32,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 32
+   },
+   "rcodes": {
+    "NOERROR": 32
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 448,
+   "first_ts": 1724443916.457576,
+   "last_ts": 1724520151.073246,
+   "median_gap_s": 0.06,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "*",
+   "queries": 48,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "NBSTAT": 48
+   },
+   "rcodes": {
+    "-": 48
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724441832.691293,
+   "last_ts": 1724525320.568224,
+   "median_gap_s": 1.512,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.65",
+   "base_domain": "\\x01\\x02__msbrowse__\\x02",
+   "queries": 102,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "NB": 102
+   },
+   "rcodes": {
+    "-": 102
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724447754.688441,
+   "last_ts": 1724519339.762693,
+   "median_gap_s": 1.497,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.65",
+   "base_domain": "workgroup",
+   "queries": 117,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "NB": 117
+   },
+   "rcodes": {
+    "-": 117
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724447814.171223,
+   "last_ts": 1724520025.301182,
+   "median_gap_s": 29.98,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "desktop-incm4h4",
+   "queries": 3,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "NB": 3
+   },
+   "rcodes": {
+    "-": 3
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724508587.756596,
+   "last_ts": 1724508589.260698,
+   "median_gap_s": 0.752,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.77",
+   "base_domain": "aka.ms",
+   "queries": 6,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "A": 6
+   },
+   "rcodes": {
+    "NOERROR": 6
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 76,
+   "first_ts": 1724464722.911542,
+   "last_ts": 1724509777.143227,
+   "median_gap_s": 13.06,
+   "flagged": false
+  },
+  {
+   "client": "192.168.2.75",
+   "base_domain": "steamdeck",
+   "queries": 3,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "*": 3
+   },
+   "rcodes": {
+    "-": 3
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724466369.473946,
+   "last_ts": 1724466369.809456,
+   "median_gap_s": 0.168,
+   "flagged": false
+  },
+  {
+   "client": "fe80::5220:65ff:fe3f:56c3",
+   "base_domain": "steamdeck",
+   "queries": 3,
+   "unique_subdomains": 0,
+   "peak_hour_unique_subdomains": 0,
+   "mean_subdomain_len": 0.0,
+   "max_subdomain_len": 0,
+   "mean_entropy": 0.0,
+   "hex_only_share": 0.0,
+   "qtypes": {
+    "*": 3
+   },
+   "rcodes": {
+    "-": 3
+   },
+   "upstream_bytes_est": 0,
+   "answer_chars": 0,
+   "first_ts": 1724466371.361862,
+   "last_ts": 1724466371.824435,
+   "median_gap_s": 0.231,
+   "flagged": false
+  }
+ ]
+}

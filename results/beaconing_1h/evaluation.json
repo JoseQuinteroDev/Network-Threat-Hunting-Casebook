@@ -1,0 +1,2313 @@
+[
+ {
+  "capture": "delay_var_d10_j25_1h",
+  "rotation": "none",
+  "delay_s": 10,
+  "jitter_pct": 25,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 19,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.949
+    ],
+    "beacon_flagged": 1,
+    "negatives": 18,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.884,
+     "median_gap_s": 6.6,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.884,
+      "median_gap_s": 6.6,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.49",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.861,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.48",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.842,
+      "median_gap_s": 105.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.949
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.474,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 10,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.949
+    ],
+    "beacon_flagged": 1,
+    "negatives": 9,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.924,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.924,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.884,
+      "median_gap_s": 6.6,
+      "names": []
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79+192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.846,
+      "median_gap_s": 4.35,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.949
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.474,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.949
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "delay_var_d30_j25_1h",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 25,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 19,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.964
+    ],
+    "beacon_flagged": 1,
+    "negatives": 18,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.79",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.964,
+     "median_gap_s": 40.08,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.964,
+      "median_gap_s": 40.08,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.92,
+      "median_gap_s": 40.08,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.823,
+      "median_gap_s": 135.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "143.198.3.13",
+      "port": 137,
+      "proto": "udp",
+      "score": 0.808,
+      "median_gap_s": 54.49,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 3,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.964
+    ],
+    "beacon_flagged": 1,
+    "negatives": 2,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "143.198.3.13",
+     "port": 137,
+     "proto": "udp",
+     "score": 0.808,
+     "median_gap_s": 54.49,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "143.198.3.13",
+      "port": 137,
+      "proto": "udp",
+      "score": 0.808,
+      "median_gap_s": 54.49,
+      "names": []
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 12,
+    "beacon_ranks": [
+     3
+    ],
+    "beacon_scores": [
+     0.964
+    ],
+    "beacon_flagged": 1,
+    "negatives": 11,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.982,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.982,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.964,
+      "median_gap_s": 40.08,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.92,
+      "median_gap_s": 40.08,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "131.253.33.239+143.198.3.13+151.101.126.172+20.187.55.34+20.42.65.91+40.79.150.120",
+      "port": 137,
+      "proto": "udp",
+      "score": 0.802,
+      "median_gap_s": 43.03,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com",
+       "ctldl.windowsupdate.com",
+       "edge.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 3,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.964
+    ],
+    "beacon_flagged": 1,
+    "negatives": 2,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "131.253.33.239+143.198.3.13+151.101.126.172+20.187.55.34+20.42.65.91+40.79.150.120",
+     "port": 137,
+     "proto": "udp",
+     "score": 0.802,
+     "median_gap_s": 43.03,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com",
+      "ctldl.windowsupdate.com",
+      "edge.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "131.253.33.239+143.198.3.13+151.101.126.172+20.187.55.34+20.42.65.91+40.79.150.120",
+      "port": 137,
+      "proto": "udp",
+      "score": 0.802,
+      "median_gap_s": 43.03,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com",
+       "ctldl.windowsupdate.com",
+       "edge.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.964
+     ],
+     "false_positives": 1,
+     "negatives": 2
+    }
+   }
+  }
+ },
+ {
+  "capture": "delay_var_d300_j25_1h",
+  "rotation": "none",
+  "delay_s": 300,
+  "jitter_pct": 25,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 13,
+    "beacon_ranks": [],
+    "beacon_scores": [],
+    "beacon_flagged": 0,
+    "negatives": 13,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.79",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.953,
+     "median_gap_s": 40.38,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.953,
+      "median_gap_s": 40.38,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.48",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.839,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.96",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.813,
+      "median_gap_s": 90.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 1,
+    "beacon_ranks": [],
+    "beacon_scores": [],
+    "beacon_flagged": 0,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 6,
+    "beacon_ranks": [],
+    "beacon_scores": [],
+    "beacon_flagged": 0,
+    "negatives": 6,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.79",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.953,
+     "median_gap_s": 40.38,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.953,
+      "median_gap_s": 40.38,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.941,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 1,
+    "beacon_ranks": [],
+    "beacon_scores": [],
+    "beacon_flagged": 0,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "jit_var_d30_j0_1h",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 0,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 18,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.991
+    ],
+    "beacon_flagged": 1,
+    "negatives": 17,
+    "false_positives": 9,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.978,
+     "median_gap_s": 40.1,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 40.1,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.955,
+      "median_gap_s": 40.36,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "192.168.2.1",
+      "port": 53,
+      "proto": "udp",
+      "score": 0.877,
+      "median_gap_s": 15.0,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.18",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.85,
+      "median_gap_s": 150.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.48",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.837,
+      "median_gap_s": 97.5,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.49",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.828,
+      "median_gap_s": 127.5,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.991
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 10,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.991
+    ],
+    "beacon_flagged": 1,
+    "negatives": 9,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.978,
+     "median_gap_s": 40.1,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 40.1,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.962,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.955,
+      "median_gap_s": 40.36,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "192.168.2.1",
+      "port": 53,
+      "proto": "udp",
+      "score": 0.877,
+      "median_gap_s": 15.0,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.991
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.991
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "jit_var_d30_j10_1h",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 10,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 19,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.976
+    ],
+    "beacon_flagged": 1,
+    "negatives": 18,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.14",
+     "dst": "192.168.2.79",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.921,
+     "median_gap_s": 40.15,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.921,
+      "median_gap_s": 40.15,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.906,
+      "median_gap_s": 20.05,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.859,
+      "median_gap_s": 103.17,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.807,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.976
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 11,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.976
+    ],
+    "beacon_flagged": 1,
+    "negatives": 10,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.954,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.954,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.921,
+      "median_gap_s": 40.15,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.906,
+      "median_gap_s": 20.05,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.976
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.936
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "jit_var_d30_j99_1h",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 99,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 17,
+    "beacon_ranks": [
+     4
+    ],
+    "beacon_scores": [
+     0.87
+    ],
+    "beacon_flagged": 1,
+    "negatives": 16,
+    "false_positives": 8,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.95,
+     "median_gap_s": 19.09,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.95,
+      "median_gap_s": 19.09,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.899,
+      "median_gap_s": 9.69,
+      "names": []
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.878,
+      "median_gap_s": 21.02,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.853,
+      "median_gap_s": 127.5,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.828,
+      "median_gap_s": 135.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.825,
+      "median_gap_s": 21.04,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.87
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.471,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.87
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.87
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.87
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.87
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.87
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 9,
+    "beacon_ranks": [
+     5
+    ],
+    "beacon_scores": [
+     0.872
+    ],
+    "beacon_flagged": 1,
+    "negatives": 8,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.953,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.953,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.95,
+      "median_gap_s": 19.09,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.899,
+      "median_gap_s": 9.69,
+      "names": []
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79+192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.877,
+      "median_gap_s": 9.93,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.872
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.471,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.872
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.872
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.872
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.872
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.872
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "random_d30_j0_1h",
+  "rotation": "random, 2 redirectors",
+  "delay_s": 30,
+  "jitter_pct": 0,
+  "beacon_pairs": 2,
+  "pair": {
+   "raw": {
+    "units": 19,
+    "beacon_ranks": [
+     1,
+     8
+    ],
+    "beacon_scores": [
+     0.875,
+     0.75
+    ],
+    "beacon_flagged": 1,
+    "negatives": 17,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.18",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.84,
+     "median_gap_s": 116.35,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.18",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.84,
+      "median_gap_s": 116.35,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.96",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.839,
+      "median_gap_s": 146.34,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 3,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.875,
+     0.75
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.875,
+      0.75
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.875,
+      0.75
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.875,
+      0.75
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.875,
+      0.75
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.875,
+      0.75
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 10,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.996
+    ],
+    "beacon_flagged": 1,
+    "negatives": 9,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.952,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.952,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79+192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.859,
+      "median_gap_s": 5.63,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.996
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.473,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.996
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.996
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.996
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.996
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.996
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "random_d30_j25_1h",
+  "rotation": "random, 2 redirectors",
+  "delay_s": 30,
+  "jitter_pct": 25,
+  "beacon_pairs": 2,
+  "pair": {
+   "raw": {
+    "units": 19,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.889,
+     0.868
+    ],
+    "beacon_flagged": 2,
+    "negatives": 17,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "91.189.91.97",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.847,
+     "median_gap_s": 135.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.847,
+      "median_gap_s": 135.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.824,
+      "median_gap_s": 133.17,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.805,
+      "median_gap_s": 142.5,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.801,
+      "median_gap_s": 13.18,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 3,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.889,
+     0.868
+    ],
+    "beacon_flagged": 2,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.471,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.889,
+      0.868
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.889,
+      0.868
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.889,
+      0.868
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.889,
+      0.868
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.889,
+      0.868
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 8,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.929
+    ],
+    "beacon_flagged": 1,
+    "negatives": 7,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.965,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.965,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.801,
+      "median_gap_s": 13.18,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.929
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.471,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.929
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.929
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.929
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.929
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.929
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ },
+ {
+  "capture": "round_rob_r2_d30_j25_1h",
+  "rotation": "round robin, 2 redirectors",
+  "delay_s": 30,
+  "jitter_pct": 25,
+  "beacon_pairs": 2,
+  "pair": {
+   "raw": {
+    "units": 19,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.958,
+     0.952
+    ],
+    "beacon_flagged": 2,
+    "negatives": 17,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.14",
+     "dst": "192.168.2.79",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.877,
+     "median_gap_s": 20.84,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.877,
+      "median_gap_s": 20.84,
+      "names": []
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.87,
+      "median_gap_s": 20.83,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.96",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.849,
+      "median_gap_s": 104.33,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.827,
+      "median_gap_s": 105.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 3,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.958,
+     0.952
+    ],
+    "beacon_flagged": 2,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.471,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.958,
+      0.952
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.958,
+      0.952
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.958,
+      0.952
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.958,
+      0.952
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.958,
+      0.952
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 9,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.958
+    ],
+    "beacon_flagged": 1,
+    "negatives": 8,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.978,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 2,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.958
+    ],
+    "beacon_flagged": 1,
+    "negatives": 1,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "1.1.1.1",
+     "port": 53,
+     "proto": "udp",
+     "score": 0.471,
+     "median_gap_s": 0.0,
+     "names": []
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.958
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.958
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.958
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.958
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.958
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    }
+   }
+  }
+ }
+]

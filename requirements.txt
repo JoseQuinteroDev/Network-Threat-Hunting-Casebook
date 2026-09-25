@@ -1,0 +1,2 @@
+tldextract==5.3.2
+matplotlib==3.11.2

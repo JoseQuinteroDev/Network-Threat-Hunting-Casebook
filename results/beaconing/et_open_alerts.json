@@ -1,0 +1,354 @@
+[
+ {
+  "capture": "delay_var_d10_j25_24h",
+  "alerts": 118132,
+  "signatures": 12,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85610
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    20604
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5903
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5903
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    49
+   ],
+   [
+    "ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent",
+    31
+   ]
+  ],
+  "beacon_alerts": 2,
+  "beacon_signatures": [
+   [
+    "ET HUNTING Dotted Quad Host Base64-Encoded Powershell Payload",
+    1
+   ],
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    1
+   ]
+  ]
+ },
+ {
+  "capture": "delay_var_d30_j25_24h",
+  "alerts": 103427,
+  "signatures": 12,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85574
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5904
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5904
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    5551
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    432
+   ],
+   [
+    "SURICATA Applayer Detect protocol only one direction",
+    22
+   ]
+  ],
+  "beacon_alerts": 2,
+  "beacon_signatures": [
+   [
+    "ET HUNTING Dotted Quad Host Base64-Encoded Powershell Payload",
+    1
+   ],
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    1
+   ]
+  ]
+ },
+ {
+  "capture": "delay_var_d300_j25_24h",
+  "alerts": 101384,
+  "signatures": 15,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85713
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5896
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5896
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    3655
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    145
+   ],
+   [
+    "ET SCAN Potential SSH Scan OUTBOUND",
+    20
+   ]
+  ],
+  "beacon_alerts": 0,
+  "beacon_signatures": []
+ },
+ {
+  "capture": "jit_var_d30_j0_24h",
+  "alerts": 105687,
+  "signatures": 13,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85670
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    8078
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5891
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5891
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    85
+   ],
+   [
+    "ET USER_AGENTS Microsoft Device Metadata Retrieval Client User-Agent",
+    32
+   ]
+  ],
+  "beacon_alerts": 4,
+  "beacon_signatures": [
+   [
+    "ET HUNTING Dotted Quad Host Base64-Encoded Powershell Payload",
+    2
+   ],
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    2
+   ]
+  ]
+ },
+ {
+  "capture": "jit_var_d30_j10_24h",
+  "alerts": 106184,
+  "signatures": 11,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85815
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    8529
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5887
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5887
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    19
+   ],
+   [
+    "ET SCAN Potential SSH Scan OUTBOUND",
+    18
+   ]
+  ],
+  "beacon_alerts": 2,
+  "beacon_signatures": [
+   [
+    "ET HUNTING Dotted Quad Host Base64-Encoded Powershell Payload",
+    1
+   ],
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    1
+   ]
+  ]
+ },
+ {
+  "capture": "jit_var_d30_j99_24h",
+  "alerts": 118084,
+  "signatures": 14,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85617
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    20558
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5900
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5900
+   ],
+   [
+    "ET SCAN Potential SSH Scan OUTBOUND",
+    33
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    31
+   ]
+  ],
+  "beacon_alerts": 2,
+  "beacon_signatures": [
+   [
+    "ET HUNTING Dotted Quad Host Base64-Encoded Powershell Payload",
+    1
+   ],
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    1
+   ]
+  ]
+ },
+ {
+  "capture": "random_d30_j0_24h",
+  "alerts": 121765,
+  "signatures": 12,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85689
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    24160
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5904
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5904
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    61
+   ],
+   [
+    "ET SCAN Potential SSH Scan OUTBOUND",
+    18
+   ]
+  ],
+  "beacon_alerts": 1,
+  "beacon_signatures": [
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    1
+   ]
+  ]
+ },
+ {
+  "capture": "random_d30_j25_24h",
+  "alerts": 120226,
+  "signatures": 13,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85644
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    22736
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5853
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5853
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    62
+   ],
+   [
+    "ET SCAN Potential SSH Scan OUTBOUND",
+    19
+   ]
+  ],
+  "beacon_alerts": 0,
+  "beacon_signatures": []
+ },
+ {
+  "capture": "round_rob_r2_d30_j25_24h",
+  "alerts": 119861,
+  "signatures": 14,
+  "top": [
+   [
+    "SURICATA Ethertype unknown",
+    85769
+   ],
+   [
+    "ET INFO Windows Update P2P Activity",
+    22223
+   ],
+   [
+    "ET USER_AGENTS Go HTTP Client User-Agent",
+    5874
+   ],
+   [
+    "ET INFO Go-http-client User-Agent Observed Outbound",
+    5874
+   ],
+   [
+    "SURICATA HTTP Response excessive header repetition",
+    66
+   ],
+   [
+    "ET SCAN Potential SSH Scan OUTBOUND",
+    18
+   ]
+  ],
+  "beacon_alerts": 1,
+  "beacon_signatures": [
+   [
+    "ET HUNTING HTTP Response Containing Base64-Encoded Powershell Payload Keywords",
+    1
+   ]
+  ]
+ }
+]

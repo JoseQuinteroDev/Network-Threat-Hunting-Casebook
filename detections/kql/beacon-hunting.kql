@@ -1,0 +1,64 @@
+// Beacon hunting — the same scoring as tools/beacon_score.py:
+//   S_disp = 1 - MAD(gaps) / median(gaps)     timing regularity
+//   S_skew = 1 - |Bowley skewness of gaps|    timing symmetry
+//   S_size = 1 - MAD(bytes) / median(bytes)   size regularity (only where byte counts exist)
+//   S_cov  = hours with traffic / hours in the window
+//   Flag when connections >= 20 and the mean sub-score >= 0.80 (fixed before evaluation).
+
+// ---------------------------------------------------------------------------------------------
+// 1) Microsoft Sentinel over Zeek conn.log (custom table ZeekConn_CL, see case 03)
+//    Full four-component score, per client / server / port / protocol.
+// ---------------------------------------------------------------------------------------------
+let window = 24h;
+ZeekConn_CL
+| where TimeGenerated > ago(window)
+| where ipv4_is_private(id_orig_h) and not(ipv4_is_private(id_resp_h))      // outbound only
+| where not(proto == "udp" and id_resp_p == 123)                           // NTP
+| project TimeGenerated, Src = id_orig_h, Dst = id_resp_h, Port = id_resp_p, proto,
+          Bytes = toreal(orig_ip_bytes + resp_ip_bytes)
+| sort by Src asc, Dst asc, Port asc, proto asc, TimeGenerated asc
+| extend Key = strcat(Src, "|", Dst, "|", Port, "|", proto)
+| extend Gap = iff(prev(Key) == Key, datetime_diff("millisecond", TimeGenerated, prev(TimeGenerated)) / 1000.0, real(null))
+| summarize Connections = count(), Gaps = make_list_if(Gap, isnotnull(Gap), 100000), Sizes = make_list(Bytes, 100000),
+            Hours = dcount(bin(TimeGenerated, 1h)) by Src, Dst, Port, proto
+| where Connections >= 20
+| extend G = array_sort_asc(Gaps), S = array_sort_asc(Sizes)
+| extend Q1 = todouble(G[toint(array_length(G) * 0.25)]), Med = todouble(G[toint(array_length(G) * 0.5)]),
+         Q3 = todouble(G[toint(array_length(G) * 0.75)]), SizeMed = todouble(S[toint(array_length(S) * 0.5)])
+| mv-apply g = Gaps to typeof(real) on (summarize GapMAD = percentile(abs(g - Med), 50))
+| mv-apply b = Sizes to typeof(real) on (summarize SizeMAD = percentile(abs(b - SizeMed), 50))
+| extend S_disp = max_of(0.0, 1 - GapMAD / Med),
+         S_skew = iff(Q3 == Q1, 1.0, max_of(0.0, 1 - abs((Q1 + Q3 - 2 * Med) / (Q3 - Q1)))),
+         S_size = iff(SizeMed > 0, max_of(0.0, 1 - SizeMAD / SizeMed), 0.0),
+         S_cov = min_of(1.0, Hours / (window / 1h))
+| extend Score = round((S_disp + S_skew + S_size + S_cov) / 4, 3)
+| where Score >= 0.80
+| project Src, Dst, Port, proto, Connections, MedianGapSeconds = round(Med, 2), S_disp, S_skew, S_size, S_cov, Score
+| order by Score desc
+
+// ---------------------------------------------------------------------------------------------
+// 2) Microsoft Defender XDR Advanced Hunting over DeviceNetworkEvents
+//    Defender for Endpoint does not record byte counts, so the score uses three components.
+//    In exchange it names the process behind the connections.
+// ---------------------------------------------------------------------------------------------
+// let window = 24h;
+// DeviceNetworkEvents
+// | where Timestamp > ago(window) and ActionType == "ConnectionSuccess" and RemoteIPType == "Public"
+// | where not(Protocol == "Udp" and RemotePort == 123)
+// | project Timestamp, DeviceName, RemoteIP, RemotePort, Process = InitiatingProcessFileName
+// | sort by DeviceName asc, RemoteIP asc, RemotePort asc, Process asc, Timestamp asc
+// | extend Key = strcat(DeviceName, "|", RemoteIP, "|", RemotePort, "|", Process)
+// | extend Gap = iff(prev(Key) == Key, datetime_diff("millisecond", Timestamp, prev(Timestamp)) / 1000.0, real(null))
+// | summarize Connections = count(), Gaps = make_list_if(Gap, isnotnull(Gap), 100000),
+//             Hours = dcount(bin(Timestamp, 1h)) by DeviceName, RemoteIP, RemotePort, Process
+// | where Connections >= 20
+// | extend G = array_sort_asc(Gaps)
+// | extend Q1 = todouble(G[toint(array_length(G) * 0.25)]), Med = todouble(G[toint(array_length(G) * 0.5)]),
+//          Q3 = todouble(G[toint(array_length(G) * 0.75)])
+// | mv-apply g = Gaps to typeof(real) on (summarize GapMAD = percentile(abs(g - Med), 50))
+// | extend S_disp = max_of(0.0, 1 - GapMAD / Med),
+//          S_skew = iff(Q3 == Q1, 1.0, max_of(0.0, 1 - abs((Q1 + Q3 - 2 * Med) / (Q3 - Q1)))),
+//          S_cov = min_of(1.0, Hours / (window / 1h))
+// | extend Score = round((S_disp + S_skew + S_cov) / 3, 3)
+// | where Score >= 0.80
+// | order by Score desc

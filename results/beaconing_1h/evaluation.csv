@@ -1,0 +1,37 @@
+capture,rotation,delay_s,jitter_pct,mode,scope,units,beacon_best_rank,beacon_best_score,beacon_flagged,negatives,false_positives,flagged_first_1h,flagged_first_2h,flagged_first_6h,flagged_first_12h,flagged_first_24h
+delay_var_d10_j25_1h,none,10,25,pair,raw,19,1,0.949,1,18,3,,,,,
+delay_var_d10_j25_1h,none,10,25,pair,allowlist,2,1,0.949,1,1,0,1,1,1,1,1
+delay_var_d10_j25_1h,none,10,25,channel,raw,10,1,0.949,1,9,3,,,,,
+delay_var_d10_j25_1h,none,10,25,channel,allowlist,2,1,0.949,1,1,0,1,1,1,1,1
+delay_var_d30_j25_1h,none,30,25,pair,raw,19,2,0.964,1,18,4,,,,,
+delay_var_d30_j25_1h,none,30,25,pair,allowlist,3,1,0.964,1,2,1,1,1,1,1,1
+delay_var_d30_j25_1h,none,30,25,channel,raw,12,3,0.964,1,11,4,,,,,
+delay_var_d30_j25_1h,none,30,25,channel,allowlist,3,1,0.964,1,2,1,1,1,1,1,1
+delay_var_d300_j25_1h,none,300,25,pair,raw,13,,,0,13,3,,,,,
+delay_var_d300_j25_1h,none,300,25,pair,allowlist,1,,,0,1,0,0,0,0,0,0
+delay_var_d300_j25_1h,none,300,25,channel,raw,6,,,0,6,2,,,,,
+delay_var_d300_j25_1h,none,300,25,channel,allowlist,1,,,0,1,0,0,0,0,0,0
+jit_var_d30_j0_1h,none,30,0,pair,raw,18,1,0.991,1,17,9,,,,,
+jit_var_d30_j0_1h,none,30,0,pair,allowlist,2,1,0.991,1,1,0,1,1,1,1,1
+jit_var_d30_j0_1h,none,30,0,channel,raw,10,1,0.991,1,9,4,,,,,
+jit_var_d30_j0_1h,none,30,0,channel,allowlist,2,1,0.991,1,1,0,1,1,1,1,1
+jit_var_d30_j10_1h,none,30,10,pair,raw,19,1,0.976,1,18,4,,,,,
+jit_var_d30_j10_1h,none,30,10,pair,allowlist,2,1,0.976,1,1,0,1,1,1,1,1
+jit_var_d30_j10_1h,none,30,10,channel,raw,11,1,0.976,1,10,3,,,,,
+jit_var_d30_j10_1h,none,30,10,channel,allowlist,2,1,0.976,1,1,0,1,1,1,1,1
+jit_var_d30_j99_1h,none,30,99,pair,raw,17,4,0.87,1,16,8,,,,,
+jit_var_d30_j99_1h,none,30,99,pair,allowlist,2,1,0.87,1,1,0,1,1,1,1,1
+jit_var_d30_j99_1h,none,30,99,channel,raw,9,5,0.872,1,8,4,,,,,
+jit_var_d30_j99_1h,none,30,99,channel,allowlist,2,1,0.872,1,1,0,1,1,1,1,1
+random_d30_j0_1h,"random, 2 redirectors",30,0,pair,raw,19,1,0.875,1,17,2,,,,,
+random_d30_j0_1h,"random, 2 redirectors",30,0,pair,allowlist,3,1,0.875,1,1,0,1,1,1,1,1
+random_d30_j0_1h,"random, 2 redirectors",30,0,channel,raw,10,1,0.996,1,9,2,,,,,
+random_d30_j0_1h,"random, 2 redirectors",30,0,channel,allowlist,2,1,0.996,1,1,0,1,1,1,1,1
+random_d30_j25_1h,"random, 2 redirectors",30,25,pair,raw,19,1,0.889,2,17,4,,,,,
+random_d30_j25_1h,"random, 2 redirectors",30,25,pair,allowlist,3,1,0.889,2,1,0,2,2,2,2,2
+random_d30_j25_1h,"random, 2 redirectors",30,25,channel,raw,8,2,0.929,1,7,2,,,,,
+random_d30_j25_1h,"random, 2 redirectors",30,25,channel,allowlist,2,1,0.929,1,1,0,1,1,1,1,1
+round_rob_r2_d30_j25_1h,"round robin, 2 redirectors",30,25,pair,raw,19,1,0.958,2,17,4,,,,,
+round_rob_r2_d30_j25_1h,"round robin, 2 redirectors",30,25,pair,allowlist,3,1,0.958,2,1,0,2,2,2,2,2
+round_rob_r2_d30_j25_1h,"round robin, 2 redirectors",30,25,channel,raw,9,2,0.958,1,8,1,,,,,
+round_rob_r2_d30_j25_1h,"round robin, 2 redirectors",30,25,channel,allowlist,2,1,0.958,1,1,0,1,1,1,1,1

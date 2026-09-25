@@ -1,0 +1,19 @@
+// Analytics rule: the same host raised a network IDS alert (Suricata on the gateway) and an endpoint alert
+// (Defender for Endpoint through Defender for Cloud) within one hour.
+// The watchlist LabAssets maps private IP addresses to host names (asset inventory).
+let window = 1h;
+let assets = _GetWatchlist('LabAssets') | project HostIp = tostring(IpAddress), HostName = tolower(tostring(HostName));
+let network = Syslog
+    | where TimeGenerated > ago(2h) and Facility == "local5" and ProcessName =~ "suricata"
+    | extend E = parse_json(extract(@"(\{.*\})", 1, SyslogMessage))
+    | where tostring(E.event_type) == "alert"
+    | project NetworkTime = TimeGenerated, HostIp = tostring(E.src_ip), Signature = tostring(E.alert.signature)
+    | join kind=inner assets on HostIp;
+SecurityAlert
+| where TimeGenerated > ago(2h)
+| extend HostName = tolower(tostring(split(CompromisedEntity, ".")[0]))
+| join kind=inner network on HostName
+| where abs(datetime_diff("minute", TimeGenerated, NetworkTime)) <= 60
+| summarize EndpointAlerts = make_set(AlertName, 10), NetworkAlerts = make_set(Signature, 10),
+            FirstNetworkAlert = min(NetworkTime), FirstEndpointAlert = min(TimeGenerated)
+    by HostName, HostIp

@@ -1,0 +1,12 @@
+# Captures, raw logs, rulesets and test output never leave this machine
+_private/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local secrets of the case 03 lab (Windows password, SSH key pair, parameter files)
+lab/case03/*.local
+lab/case03/*.local.*
+lab/case03/.env

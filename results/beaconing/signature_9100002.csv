@@ -1,0 +1,12 @@
+capture,http_transactions,alerts_sid_9100002
+delay_var_d10_j25_1h,677,1
+delay_var_d30_j25_1h,432,1
+delay_var_d300_j25_1h,280,1
+jit_var_d30_j0_1h,382,1
+jit_var_d30_j10_1h,392,1
+jit_var_d30_j99_1h,497,1
+random_d30_j0_1h,386,1
+random_d30_j25_1h,419,1
+round_rob_r2_d30_j25_1h,403,1
+dnscat2_dns_tunneling_1hr,12,0
+dnscat2_dns_tunneling_24hr,446,0

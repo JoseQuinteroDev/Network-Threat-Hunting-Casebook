@@ -1,0 +1,49 @@
+// DNS tunnel hunting — same logic and thresholds as tools/dns_profile.py and
+// detections/zeek/dns-tunnel-detect.zeek: per client, base domain and hour,
+// >= 50 unique subdomains AND mean subdomain length >= 20 AND mean entropy >= 3.0 bits/char
+// (means over unique subdomains). The base domain is approximated with the last two labels.
+
+// ---------------------------------------------------------------------------------------------
+// 1) Microsoft Sentinel — any DNS source normalised by ASIM (_Im_Dns: Windows DNS, Zeek, Infoblox, ...)
+// ---------------------------------------------------------------------------------------------
+_Im_Dns(starttime = ago(1d))
+| where isnotempty(DnsQuery)
+| extend Q = tolower(trim_end(@"\.", DnsQuery))
+| where not(Q endswith ".arpa" or Q endswith ".local")
+| extend Labels = split(Q, ".")
+| where array_length(Labels) >= 3
+| extend BaseDomain = strcat(tostring(Labels[-2]), ".", tostring(Labels[-1])),
+         Subdomain = strcat_array(array_slice(Labels, 0, array_length(Labels) - 3), ".")
+| summarize UniqueSubdomains = dcount(Subdomain), Subdomains = make_set(Subdomain, 2000), Queries = count()
+    by SrcIpAddr, BaseDomain, Hour = bin(TimeGenerated, 1h)
+| where UniqueSubdomains >= 50
+// Mean length and Shannon entropy over the unique subdomains (a 2,000-name sample per hour is enough)
+| mv-expand Sub = Subdomains to typeof(string)
+| extend Clean = replace_string(Sub, ".", "")
+| extend N = strlen(Clean), SubLen = strlen(Sub)
+| mv-expand Ch = extract_all(@"(.)", Clean) to typeof(string)
+| summarize K = count() by SrcIpAddr, BaseDomain, Hour, UniqueSubdomains, Queries, Sub, SubLen, N, Ch
+| summarize SubEntropy = -sum(todouble(K) / N * log2(todouble(K) / N))
+    by SrcIpAddr, BaseDomain, Hour, UniqueSubdomains, Queries, Sub, SubLen
+| summarize MeanLength = avg(SubLen), MeanEntropy = avg(SubEntropy)
+    by SrcIpAddr, BaseDomain, Hour, UniqueSubdomains, Queries
+| where MeanLength >= 20 and MeanEntropy >= 3.0
+| order by UniqueSubdomains desc
+
+// ---------------------------------------------------------------------------------------------
+// 2) Microsoft Defender XDR Advanced Hunting — Defender for Endpoint DNS telemetry.
+//    Adds what the network view cannot give: the process that made the lookups.
+//    (Run separately; entropy omitted to keep it light — length and uniqueness carry the signal.)
+// ---------------------------------------------------------------------------------------------
+// DeviceEvents
+// | where Timestamp > ago(1d) and ActionType == "DnsQueryResponse"
+// | extend Q = tolower(tostring(parse_json(AdditionalFields).DnsQueryString))
+// | extend Labels = split(Q, ".")
+// | where array_length(Labels) >= 3
+// | extend BaseDomain = strcat(tostring(Labels[-2]), ".", tostring(Labels[-1])),
+//          Subdomain = strcat_array(array_slice(Labels, 0, array_length(Labels) - 3), ".")
+// | summarize UniqueSubdomains = dcount(Subdomain), MeanLength = avg(strlen(Subdomain)),
+//             Processes = make_set(InitiatingProcessFileName, 5)
+//     by DeviceName, BaseDomain, Hour = bin(Timestamp, 1h)
+// | where UniqueSubdomains >= 50 and MeanLength >= 20
+// | order by UniqueSubdomains desc

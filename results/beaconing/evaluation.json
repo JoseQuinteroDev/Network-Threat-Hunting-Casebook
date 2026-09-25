@@ -1,0 +1,3048 @@
+[
+ {
+  "capture": "delay_var_d10_j25",
+  "rotation": "none",
+  "delay_s": 10,
+  "jitter_pct": 25,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 36,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.982
+    ],
+    "beacon_flagged": 1,
+    "negatives": 35,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.918,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.918,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.821,
+      "median_gap_s": 119.99,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.814,
+      "median_gap_s": 17.51,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.8,
+      "median_gap_s": 9.3,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 14,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.982
+    ],
+    "beacon_flagged": 1,
+    "negatives": 13,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.220.254.12",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.83,
+     "names": [
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.859
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.882
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.939
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.963
+     ],
+     "false_positives": 0,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.982
+     ],
+     "false_positives": 0,
+     "negatives": 13
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 28,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.982
+    ],
+    "beacon_flagged": 1,
+    "negatives": 27,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+     "port": 80,
+     "proto": "tcp",
+     "score": 0.95,
+     "median_gap_s": 15.0,
+     "names": [
+      "connectivity-check.ubuntu.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.95,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.918,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.8,
+      "median_gap_s": 9.3,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 18,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.982
+    ],
+    "beacon_flagged": 1,
+    "negatives": 17,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.96.153.111+204.79.197.239",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.784,
+     "median_gap_s": 2348.9,
+     "names": [
+      "arc.msn.com",
+      "edge.microsoft.com"
+     ]
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.859
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.882
+     ],
+     "false_positives": 0,
+     "negatives": 3
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.939
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.963
+     ],
+     "false_positives": 0,
+     "negatives": 8
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.982
+     ],
+     "false_positives": 0,
+     "negatives": 17
+    }
+   }
+  }
+ },
+ {
+  "capture": "delay_var_d30_j25",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 25,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 66,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.973
+    ],
+    "beacon_flagged": 1,
+    "negatives": 65,
+    "false_positives": 11,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "192.168.2.14",
+     "port": 7680,
+     "proto": "tcp",
+     "score": 0.969,
+     "median_gap_s": 80.3,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.969,
+      "median_gap_s": 80.3,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.932,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "52.137.125.63",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.921,
+      "median_gap_s": 1917.89,
+      "names": [
+       "array816.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.912,
+      "median_gap_s": 1453.15,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.87",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.868,
+      "median_gap_s": 300.12,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.862,
+      "median_gap_s": 38.84,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 34,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.973
+    ],
+    "beacon_flagged": 1,
+    "negatives": 33,
+    "false_positives": 7,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "52.137.125.63",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.921,
+     "median_gap_s": 1917.89,
+     "names": [
+      "array816.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "52.137.125.63",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.921,
+      "median_gap_s": 1917.89,
+      "names": [
+       "array816.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.912,
+      "median_gap_s": 1453.15,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.87",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.868,
+      "median_gap_s": 300.12,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.846,
+      "median_gap_s": 300.12,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.838,
+      "median_gap_s": 300.13,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.89",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.825,
+      "median_gap_s": 300.13,
+      "names": [
+       "ecs.office.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.844
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.876
+     ],
+     "false_positives": 0,
+     "negatives": 3
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.928
+     ],
+     "false_positives": 2,
+     "negatives": 12
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.947
+     ],
+     "false_positives": 8,
+     "negatives": 22
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.973
+     ],
+     "false_positives": 7,
+     "negatives": 33
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 68,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.973
+    ],
+    "beacon_flagged": 1,
+    "negatives": 67,
+    "false_positives": 14,
+    "top_negative": {
+     "src": "192.168.2.84",
+     "dst": "104.208.16.88+104.208.16.90+104.46.162.224+104.46.162.226+13.69.116.107+13.69.116.108+13.70.79.200+13.89.178.26+13.89.179.13+20.189.173.12+20.189.173.13+20.189.173.16+20.189.173.17+20.189.173.6+20.189.173.7+20.189.173.9+20.42.65.84+20.42.65.88+20.42.65.89+20.42.65.90+20.42.65.93+20.42.65.94+20.42.73.26+20.50.73.10+20.50.73.13+40.79.141.153+51.116.246.104+52.168.112.67+52.168.117.174+52.168.117.175+52.178.17.233+52.182.143.208+52.182.143.211+52.182.143.213",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.983,
+     "median_gap_s": 1800.08,
+     "names": [
+      "mobile.events.data.microsoft.com",
+      "self.events.data.microsoft.com",
+      "v10.events.data.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.84",
+      "dst": "104.208.16.88+104.208.16.90+104.46.162.224+104.46.162.226+13.69.116.107+13.69.116.108+13.70.79.200+13.89.178.26+13.89.179.13+20.189.173.12+20.189.173.13+20.189.173.16+20.189.173.17+20.189.173.6+20.189.173.7+20.189.173.9+20.42.65.84+20.42.65.88+20.42.65.89+20.42.65.90+20.42.65.93+20.42.65.94+20.42.73.26+20.50.73.10+20.50.73.13+40.79.141.153+51.116.246.104+52.168.112.67+52.168.117.174+52.168.117.175+52.178.17.233+52.182.143.208+52.182.143.211+52.182.143.213",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.983,
+      "median_gap_s": 1800.08,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "self.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.969,
+      "median_gap_s": 80.3,
+      "names": []
+     },
+     {
+      "src": "192.168.2.89",
+      "dst": "104.208.16.88+13.69.116.107+13.69.239.74+13.89.179.11+13.89.179.13+13.89.179.8+20.189.173.1+20.189.173.11+20.189.173.13+20.189.173.14+20.189.173.23+20.189.173.26+20.189.173.27+20.189.173.6+20.42.65.88+20.42.65.89+20.42.72.131+20.42.73.24+20.42.73.25+20.44.10.123+20.50.201.205+20.50.73.11+40.79.141.154+40.79.173.41+51.105.71.137+51.11.192.48+51.11.192.49+52.168.112.67+52.178.17.2+52.182.143.209+52.182.143.211",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.964,
+      "median_gap_s": 1800.01,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.90",
+      "dst": "104.208.16.95+104.46.162.224+13.69.239.77+13.78.111.198+13.89.178.26+13.89.179.8+13.89.179.9+20.189.173.1+20.189.173.10+20.189.173.12+20.189.173.13+20.189.173.16+20.189.173.18+20.189.173.2+20.189.173.24+20.189.173.25+20.189.173.27+20.189.173.28+20.189.173.6+20.189.173.7+20.189.173.9+20.42.65.85+20.42.72.131+20.50.73.11+20.52.64.200+51.116.246.105+51.132.193.105+52.168.112.67+52.168.117.171+52.178.17.234+52.182.141.63+52.182.143.213+52.182.143.214+52.182.143.215",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.957,
+      "median_gap_s": 1800.09,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "self.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.938,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.932,
+      "median_gap_s": 2048.25,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 49,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.973
+    ],
+    "beacon_flagged": 1,
+    "negatives": 48,
+    "false_positives": 10,
+    "top_negative": {
+     "src": "192.168.2.84",
+     "dst": "104.208.16.88+104.208.16.90+104.46.162.224+104.46.162.226+13.69.116.107+13.69.116.108+13.70.79.200+13.89.178.26+13.89.179.13+20.189.173.12+20.189.173.13+20.189.173.16+20.189.173.17+20.189.173.6+20.189.173.7+20.189.173.9+20.42.65.84+20.42.65.88+20.42.65.89+20.42.65.90+20.42.65.93+20.42.65.94+20.42.73.26+20.50.73.10+20.50.73.13+40.79.141.153+51.116.246.104+52.168.112.67+52.168.117.174+52.168.117.175+52.178.17.233+52.182.143.208+52.182.143.211+52.182.143.213",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.983,
+     "median_gap_s": 1800.08,
+     "names": [
+      "mobile.events.data.microsoft.com",
+      "self.events.data.microsoft.com",
+      "v10.events.data.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.84",
+      "dst": "104.208.16.88+104.208.16.90+104.46.162.224+104.46.162.226+13.69.116.107+13.69.116.108+13.70.79.200+13.89.178.26+13.89.179.13+20.189.173.12+20.189.173.13+20.189.173.16+20.189.173.17+20.189.173.6+20.189.173.7+20.189.173.9+20.42.65.84+20.42.65.88+20.42.65.89+20.42.65.90+20.42.65.93+20.42.65.94+20.42.73.26+20.50.73.10+20.50.73.13+40.79.141.153+51.116.246.104+52.168.112.67+52.168.117.174+52.168.117.175+52.178.17.233+52.182.143.208+52.182.143.211+52.182.143.213",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.983,
+      "median_gap_s": 1800.08,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "self.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.89",
+      "dst": "104.208.16.88+13.69.116.107+13.69.239.74+13.89.179.11+13.89.179.13+13.89.179.8+20.189.173.1+20.189.173.11+20.189.173.13+20.189.173.14+20.189.173.23+20.189.173.26+20.189.173.27+20.189.173.6+20.42.65.88+20.42.65.89+20.42.72.131+20.42.73.24+20.42.73.25+20.44.10.123+20.50.201.205+20.50.73.11+40.79.141.154+40.79.173.41+51.105.71.137+51.11.192.48+51.11.192.49+52.168.112.67+52.178.17.2+52.182.143.209+52.182.143.211",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.964,
+      "median_gap_s": 1800.01,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.90",
+      "dst": "104.208.16.95+104.46.162.224+13.69.239.77+13.78.111.198+13.89.178.26+13.89.179.8+13.89.179.9+20.189.173.1+20.189.173.10+20.189.173.12+20.189.173.13+20.189.173.16+20.189.173.18+20.189.173.2+20.189.173.24+20.189.173.25+20.189.173.27+20.189.173.28+20.189.173.6+20.189.173.7+20.189.173.9+20.42.65.85+20.42.72.131+20.50.73.11+20.52.64.200+51.116.246.105+51.132.193.105+52.168.112.67+52.168.117.171+52.178.17.234+52.182.141.63+52.182.143.213+52.182.143.214+52.182.143.215",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.957,
+      "median_gap_s": 1800.09,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "self.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "18.216.36.190+18.221.229.81+3.130.95.182+3.134.44.134+3.142.111.40+3.143.19.65+3.143.53.1+3.22.139.176",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.899,
+      "median_gap_s": 3600.04,
+      "names": [
+       "app.slack.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34+52.137.125.63",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.846,
+      "median_gap_s": 959.8,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com",
+       "array816.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.846,
+      "median_gap_s": 300.12,
+      "names": [
+       "ecs.office.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.844
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.876
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.928
+     ],
+     "false_positives": 2,
+     "negatives": 13
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.947
+     ],
+     "false_positives": 10,
+     "negatives": 28
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.973
+     ],
+     "false_positives": 9,
+     "negatives": 48
+    }
+   }
+  }
+ },
+ {
+  "capture": "delay_var_d300_j25",
+  "rotation": "none",
+  "delay_s": 300,
+  "jitter_pct": 25,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 43,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.979
+    ],
+    "beacon_flagged": 1,
+    "negatives": 42,
+    "false_positives": 5,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.965,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.965,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.907,
+      "median_gap_s": 40.33,
+      "names": [
+       "sledgehammer.local"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.865,
+      "median_gap_s": 300.14,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.855,
+      "median_gap_s": 300.14,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.802,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 15,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.979
+    ],
+    "beacon_flagged": 1,
+    "negatives": 14,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "52.113.194.132",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.865,
+     "median_gap_s": 300.14,
+     "names": [
+      "ecs.office.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.865,
+      "median_gap_s": 300.14,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.855,
+      "median_gap_s": 300.14,
+      "names": [
+       "ecs.office.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.758
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.931
+     ],
+     "false_positives": 1,
+     "negatives": 8
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.94
+     ],
+     "false_positives": 1,
+     "negatives": 12
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.979
+     ],
+     "false_positives": 2,
+     "negatives": 14
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 35,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.979
+    ],
+    "beacon_flagged": 1,
+    "negatives": 34,
+    "false_positives": 5,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "18.216.36.190+18.221.229.81+3.129.123.235+3.130.95.182+3.134.44.134+3.142.111.40+3.143.19.65+3.22.139.176",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.978,
+     "median_gap_s": 3600.04,
+     "names": [
+      "app.slack.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "18.216.36.190+18.221.229.81+3.129.123.235+3.130.95.182+3.134.44.134+3.142.111.40+3.143.19.65+3.22.139.176",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 3600.04,
+      "names": [
+       "app.slack.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.965,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.949,
+      "median_gap_s": 15.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.907,
+      "median_gap_s": 40.33,
+      "names": [
+       "sledgehammer.local"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "13.69.116.108+20.50.201.200+52.113.194.132+52.113.195.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.907,
+      "median_gap_s": 300.14,
+      "names": [
+       "ecs.office.com",
+       "v10.events.data.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 19,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.979
+    ],
+    "beacon_flagged": 1,
+    "negatives": 18,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "18.216.36.190+18.221.229.81+3.129.123.235+3.130.95.182+3.134.44.134+3.142.111.40+3.143.19.65+3.22.139.176",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.978,
+     "median_gap_s": 3600.04,
+     "names": [
+      "app.slack.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "18.216.36.190+18.221.229.81+3.129.123.235+3.130.95.182+3.134.44.134+3.142.111.40+3.143.19.65+3.22.139.176",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 3600.04,
+      "names": [
+       "app.slack.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "13.69.116.108+20.50.201.200+52.113.194.132+52.113.195.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.907,
+      "median_gap_s": 300.14,
+      "names": [
+       "ecs.office.com",
+       "v10.events.data.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.758
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.931
+     ],
+     "false_positives": 0,
+     "negatives": 9
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.94
+     ],
+     "false_positives": 1,
+     "negatives": 13
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.979
+     ],
+     "false_positives": 2,
+     "negatives": 18
+    }
+   }
+  }
+ },
+ {
+  "capture": "jit_var_d30_j0",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 0,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 40,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.981
+    ],
+    "beacon_flagged": 1,
+    "negatives": 39,
+    "false_positives": 7,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.956,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.956,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.838,
+      "median_gap_s": 40.12,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.821,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.814,
+      "median_gap_s": 52.27,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.48",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.803,
+      "median_gap_s": 120.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.48",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.802,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 17,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.981
+    ],
+    "beacon_flagged": 1,
+    "negatives": 16,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.191.127.184",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.798,
+     "median_gap_s": 1361.24,
+     "names": [
+      "array801.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.836
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.915
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.943
+     ],
+     "false_positives": 1,
+     "negatives": 6
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.959
+     ],
+     "false_positives": 1,
+     "negatives": 13
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.981
+     ],
+     "false_positives": 0,
+     "negatives": 15
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 29,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.981
+    ],
+    "beacon_flagged": 1,
+    "negatives": 28,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.956,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.956,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.942,
+      "median_gap_s": 15.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.838,
+      "median_gap_s": 40.12,
+      "names": []
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79+192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.828,
+      "median_gap_s": 20.48,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 19,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.981
+    ],
+    "beacon_flagged": 1,
+    "negatives": 18,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "104.208.16.88+104.208.16.90+104.46.162.225+13.69.239.78+13.70.79.200+13.89.178.26+13.89.178.27+13.89.179.10+20.189.173.17+20.189.173.18+20.189.173.3+20.189.173.6+20.42.65.84+20.42.65.90+20.42.65.91+20.42.73.25+20.44.10.122+20.50.73.13+40.79.173.41+40.79.189.58+51.116.246.106+52.168.117.170+52.168.117.171+52.182.143.208+52.182.143.215",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.758,
+     "median_gap_s": 935.38,
+     "names": [
+      "mobile.events.data.microsoft.com",
+      "self.events.data.microsoft.com",
+      "v10.events.data.microsoft.com"
+     ]
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.836
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.915
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.943
+     ],
+     "false_positives": 1,
+     "negatives": 9
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.959
+     ],
+     "false_positives": 2,
+     "negatives": 16
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.981
+     ],
+     "false_positives": 0,
+     "negatives": 18
+    }
+   }
+  }
+ },
+ {
+  "capture": "jit_var_d30_j10",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 10,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 35,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.986
+    ],
+    "beacon_flagged": 1,
+    "negatives": 34,
+    "false_positives": 5,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.999,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.999,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.949,
+      "median_gap_s": 40.1,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.894,
+      "median_gap_s": 40.34,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "91.189.91.49",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.802,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.97",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.802,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 13,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.986
+    ],
+    "beacon_flagged": 1,
+    "negatives": 12,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.211.229.28",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.89,
+     "names": [
+      "expressapisv2.net",
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.865
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.887
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.956
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.971
+     ],
+     "false_positives": 1,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.986
+     ],
+     "false_positives": 0,
+     "negatives": 12
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 27,
+    "beacon_ranks": [
+     2
+    ],
+    "beacon_scores": [
+     0.986
+    ],
+    "beacon_flagged": 1,
+    "negatives": 26,
+    "false_positives": 8,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.999,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.999,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "104.208.16.88+13.69.116.107+13.69.239.79+13.70.79.200+13.89.178.26+13.89.179.11+13.89.179.8+13.89.179.9+20.189.173.10+20.189.173.11+20.189.173.18+20.189.173.25+20.189.173.28+20.189.173.3+20.189.173.6+20.42.72.131+20.42.73.26+20.42.73.31+20.44.10.122+20.44.10.123+20.50.201.204+23.58.168.227+40.79.189.58+51.104.15.252+51.104.15.253+51.105.71.136+51.105.71.137+51.11.192.49+52.168.117.168+52.168.117.169+52.178.17.233+52.182.141.63+52.182.143.208+52.182.143.209",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 1800.03,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "storecatalogrevocation.storequality.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "20.42.65.85+52.113.194.132+52.113.195.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.959,
+      "median_gap_s": 3600.67,
+      "names": [
+       "ecs.office.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.949,
+      "median_gap_s": 40.1,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.942,
+      "median_gap_s": 15.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.894,
+      "median_gap_s": 40.34,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 17,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.986
+    ],
+    "beacon_flagged": 1,
+    "negatives": 16,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "104.208.16.88+13.69.116.107+13.69.239.79+13.70.79.200+13.89.178.26+13.89.179.11+13.89.179.8+13.89.179.9+20.189.173.10+20.189.173.11+20.189.173.18+20.189.173.25+20.189.173.28+20.189.173.3+20.189.173.6+20.42.72.131+20.42.73.26+20.42.73.31+20.44.10.122+20.44.10.123+20.50.201.204+23.58.168.227+40.79.189.58+51.104.15.252+51.104.15.253+51.105.71.136+51.105.71.137+51.11.192.49+52.168.117.168+52.168.117.169+52.178.17.233+52.182.141.63+52.182.143.208+52.182.143.209",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.978,
+     "median_gap_s": 1800.03,
+     "names": [
+      "mobile.events.data.microsoft.com",
+      "storecatalogrevocation.storequality.microsoft.com",
+      "v10.events.data.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "104.208.16.88+13.69.116.107+13.69.239.79+13.70.79.200+13.89.178.26+13.89.179.11+13.89.179.8+13.89.179.9+20.189.173.10+20.189.173.11+20.189.173.18+20.189.173.25+20.189.173.28+20.189.173.3+20.189.173.6+20.42.72.131+20.42.73.26+20.42.73.31+20.44.10.122+20.44.10.123+20.50.201.204+23.58.168.227+40.79.189.58+51.104.15.252+51.104.15.253+51.105.71.136+51.105.71.137+51.11.192.49+52.168.117.168+52.168.117.169+52.178.17.233+52.182.141.63+52.182.143.208+52.182.143.209",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.978,
+      "median_gap_s": 1800.03,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "storecatalogrevocation.storequality.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "20.42.65.85+52.113.194.132+52.113.195.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.959,
+      "median_gap_s": 3600.67,
+      "names": [
+       "ecs.office.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "18.216.36.190+18.221.229.81+20.106.86.13+20.44.239.154+20.49.150.241+3.129.123.235+3.134.44.134+3.142.111.40+3.143.53.1+3.22.139.176+52.140.118.28+52.167.17.97",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.821,
+      "median_gap_s": 2472.4,
+      "names": [
+       "app.slack.com",
+       "settings-win.data.microsoft.com",
+       "slack.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.865
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.887
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.956
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.971
+     ],
+     "false_positives": 2,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.986
+     ],
+     "false_positives": 3,
+     "negatives": 16
+    }
+   }
+  }
+ },
+ {
+  "capture": "jit_var_d30_j99",
+  "rotation": "none",
+  "delay_s": 30,
+  "jitter_pct": 99,
+  "beacon_pairs": 1,
+  "pair": {
+   "raw": {
+    "units": 36,
+    "beacon_ranks": [
+     4
+    ],
+    "beacon_scores": [
+     0.876
+    ],
+    "beacon_flagged": 1,
+    "negatives": 35,
+    "false_positives": 5,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.988,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.988,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.942,
+      "median_gap_s": 3600.65,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.911,
+      "median_gap_s": 1947.95,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.848,
+      "median_gap_s": 10.22,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.18",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.802,
+      "median_gap_s": 120.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 14,
+    "beacon_ranks": [
+     3
+    ],
+    "beacon_scores": [
+     0.876
+    ],
+    "beacon_flagged": 1,
+    "negatives": 13,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "52.113.194.132",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.942,
+     "median_gap_s": 3600.65,
+     "names": [
+      "ecs.office.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.942,
+      "median_gap_s": 3600.65,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.911,
+      "median_gap_s": 1947.95,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.743
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.782
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.837
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.855
+     ],
+     "false_positives": 1,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.877
+     ],
+     "false_positives": 2,
+     "negatives": 13
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 28,
+    "beacon_ranks": [
+     5
+    ],
+    "beacon_scores": [
+     0.877
+    ],
+    "beacon_flagged": 1,
+    "negatives": 27,
+    "false_positives": 6,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.988,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.988,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.939,
+      "median_gap_s": 15.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.911,
+      "median_gap_s": 1947.95,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "104.208.16.92+104.46.162.226+104.46.162.227+13.70.79.200+13.78.111.198+13.89.178.26+13.89.179.10+13.89.179.11+13.89.179.8+20.189.173.10+20.189.173.11+20.189.173.12+20.189.173.14+20.189.173.17+20.189.173.18+20.189.173.26+20.189.173.28+20.189.173.6+20.189.173.9+20.42.65.90+20.42.72.131+20.42.73.24+20.42.73.26+20.50.201.201+40.74.98.192+40.79.173.41+52.168.112.66+52.168.117.168+52.168.117.169+52.168.117.170+52.168.117.175+52.182.143.208+52.182.143.210+52.182.143.213+52.182.143.214",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.901,
+      "median_gap_s": 1800.02,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.848,
+      "median_gap_s": 10.22,
+      "names": []
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "151.101.126.172+184.150.49.115+184.150.49.27+72.21.81.240",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.808,
+      "median_gap_s": 2625.68,
+      "names": [
+       "3.au.download.windowsupdate.com",
+       "ctldl.windowsupdate.com",
+       "download.windowsupdate.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 17,
+    "beacon_ranks": [
+     3
+    ],
+    "beacon_scores": [
+     0.877
+    ],
+    "beacon_flagged": 1,
+    "negatives": 16,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.911,
+     "median_gap_s": 1947.95,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.911,
+      "median_gap_s": 1947.95,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "104.208.16.92+104.46.162.226+104.46.162.227+13.70.79.200+13.78.111.198+13.89.178.26+13.89.179.10+13.89.179.11+13.89.179.8+20.189.173.10+20.189.173.11+20.189.173.12+20.189.173.14+20.189.173.17+20.189.173.18+20.189.173.26+20.189.173.28+20.189.173.6+20.189.173.9+20.42.65.90+20.42.72.131+20.42.73.24+20.42.73.26+20.50.201.201+40.74.98.192+40.79.173.41+52.168.112.66+52.168.117.168+52.168.117.169+52.168.117.170+52.168.117.175+52.182.143.208+52.182.143.210+52.182.143.213+52.182.143.214",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.901,
+      "median_gap_s": 1800.02,
+      "names": [
+       "mobile.events.data.microsoft.com",
+       "v10.events.data.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "151.101.126.172+184.150.49.115+184.150.49.27+72.21.81.240",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.808,
+      "median_gap_s": 2625.68,
+      "names": [
+       "3.au.download.windowsupdate.com",
+       "ctldl.windowsupdate.com",
+       "download.windowsupdate.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.743
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.782
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.838
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.856
+     ],
+     "false_positives": 1,
+     "negatives": 8
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.877
+     ],
+     "false_positives": 3,
+     "negatives": 16
+    }
+   }
+  }
+ },
+ {
+  "capture": "random_d30_j0",
+  "rotation": "random, 2 redirectors",
+  "delay_s": 30,
+  "jitter_pct": 0,
+  "beacon_pairs": 2,
+  "pair": {
+   "raw": {
+    "units": 39,
+    "beacon_ranks": [
+     31,
+     34
+    ],
+    "beacon_scores": [
+     0.594,
+     0.579
+    ],
+    "beacon_flagged": 0,
+    "negatives": 37,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.958,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.958,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.838,
+      "median_gap_s": 14.26,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.49",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.809,
+      "median_gap_s": 135.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.804,
+      "median_gap_s": 1308.49,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 17,
+    "beacon_ranks": [
+     12,
+     14
+    ],
+    "beacon_scores": [
+     0.594,
+     0.579
+    ],
+    "beacon_flagged": 0,
+    "negatives": 15,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.804,
+     "median_gap_s": 1308.49,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.804,
+      "median_gap_s": 1308.49,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.625,
+      0.625
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.667,
+      0.543
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.714,
+      0.544
+     ],
+     "false_positives": 0,
+     "negatives": 3
+    },
+    "12": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.731,
+      0.558
+     ],
+     "false_positives": 2,
+     "negatives": 10
+    },
+    "24": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.594,
+      0.579
+     ],
+     "false_positives": 1,
+     "negatives": 15
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 29,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.997
+    ],
+    "beacon_flagged": 1,
+    "negatives": 28,
+    "false_positives": 5,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.958,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.958,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.934,
+      "median_gap_s": 15.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "131.253.33.239+204.79.197.239+23.96.180.189",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.877,
+      "median_gap_s": 2479.04,
+      "names": [
+       "arc.msn.com",
+       "edge.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.838,
+      "median_gap_s": 14.26,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.804,
+      "median_gap_s": 1308.49,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 19,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.997
+    ],
+    "beacon_flagged": 1,
+    "negatives": 18,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "131.253.33.239+204.79.197.239+23.96.180.189",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.877,
+     "median_gap_s": 2479.04,
+     "names": [
+      "arc.msn.com",
+      "edge.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "131.253.33.239+204.79.197.239+23.96.180.189",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.877,
+      "median_gap_s": 2479.04,
+      "names": [
+       "arc.msn.com",
+       "edge.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.804,
+      "median_gap_s": 1308.49,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.868
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.914
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.952
+     ],
+     "false_positives": 0,
+     "negatives": 3
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.979
+     ],
+     "false_positives": 1,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.997
+     ],
+     "false_positives": 2,
+     "negatives": 18
+    }
+   }
+  }
+ },
+ {
+  "capture": "random_d30_j25",
+  "rotation": "random, 2 redirectors",
+  "delay_s": 30,
+  "jitter_pct": 25,
+  "beacon_pairs": 2,
+  "pair": {
+   "raw": {
+    "units": 40,
+    "beacon_ranks": [
+     2,
+     25
+    ],
+    "beacon_scores": [
+     0.86,
+     0.674
+    ],
+    "beacon_flagged": 1,
+    "negatives": 38,
+    "false_positives": 4,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.965,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.965,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.828,
+      "median_gap_s": 12.82,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 1272.08,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.96",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.802,
+      "median_gap_s": 120.0,
+      "names": [
+       "connectivity-check.ubuntu.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 17,
+    "beacon_ranks": [
+     1,
+     8
+    ],
+    "beacon_scores": [
+     0.86,
+     0.674
+    ],
+    "beacon_flagged": 1,
+    "negatives": 15,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.82,
+     "median_gap_s": 1272.08,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 1272.08,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.638,
+      0.608
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.676,
+      0.64
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.704,
+      0.698
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 0,
+     "beacon_scores": [
+      0.729,
+      0.705
+     ],
+     "false_positives": 0,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.86,
+      0.674
+     ],
+     "false_positives": 1,
+     "negatives": 14
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 34,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.98
+    ],
+    "beacon_flagged": 1,
+    "negatives": 33,
+    "false_positives": 5,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.965,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.965,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.924,
+      "median_gap_s": 15.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.79",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.828,
+      "median_gap_s": 12.82,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 1272.08,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "13.107.43.16+131.253.33.239+204.79.197.239",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.8,
+      "median_gap_s": 2470.9,
+      "names": [
+       "config.edge.skype.com",
+       "edge.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 23,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.98
+    ],
+    "beacon_flagged": 1,
+    "negatives": 22,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.82,
+     "median_gap_s": 1272.08,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 1272.08,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "13.107.43.16+131.253.33.239+204.79.197.239",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.8,
+      "median_gap_s": 2470.9,
+      "names": [
+       "config.edge.skype.com",
+       "edge.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.842
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.881
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.942
+     ],
+     "false_positives": 0,
+     "negatives": 3
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.954
+     ],
+     "false_positives": 1,
+     "negatives": 10
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.98
+     ],
+     "false_positives": 2,
+     "negatives": 21
+    }
+   }
+  }
+ },
+ {
+  "capture": "round_rob_d30_j25",
+  "rotation": "round robin, 2 redirectors",
+  "delay_s": 30,
+  "jitter_pct": 25,
+  "beacon_pairs": 2,
+  "pair": {
+   "raw": {
+    "units": 37,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.982,
+     0.978
+    ],
+    "beacon_flagged": 2,
+    "negatives": 35,
+    "false_positives": 3,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.953,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.953,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.854,
+      "median_gap_s": 1036.89,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.845,
+      "median_gap_s": 8.53,
+      "names": []
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 15,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.982,
+     0.978
+    ],
+    "beacon_flagged": 2,
+    "negatives": 13,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.854,
+     "median_gap_s": 1036.89,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.854,
+      "median_gap_s": 1036.89,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.861,
+      0.814
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.894,
+      0.858
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "6": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.953,
+      0.947
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.967,
+      0.958
+     ],
+     "false_positives": 1,
+     "negatives": 9
+    },
+    "24": {
+     "beacon_flagged": 2,
+     "beacon_scores": [
+      0.982,
+      0.978
+     ],
+     "false_positives": 1,
+     "negatives": 13
+    }
+   }
+  },
+  "channel": {
+   "raw": {
+    "units": 27,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.973
+    ],
+    "beacon_flagged": 1,
+    "negatives": 26,
+    "false_positives": 6,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "185.125.190.58",
+     "port": 123,
+     "proto": "udp",
+     "score": 0.953,
+     "median_gap_s": 2048.25,
+     "names": []
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.58",
+      "port": 123,
+      "proto": "udp",
+      "score": 0.953,
+      "median_gap_s": 2048.25,
+      "names": []
+     },
+     {
+      "src": "192.168.2.19",
+      "dst": "185.125.190.17+185.125.190.18+185.125.190.48+185.125.190.49+185.125.190.96+185.125.190.97+185.125.190.98+91.189.91.48+91.189.91.49+91.189.91.96+91.189.91.97+91.189.91.98",
+      "port": 80,
+      "proto": "tcp",
+      "score": 0.936,
+      "median_gap_s": 15.0,
+      "names": [
+       "changelogs.ubuntu.com",
+       "connectivity-check.ubuntu.com"
+      ]
+     },
+     {
+      "src": "192.168.2.14",
+      "dst": "192.168.2.79+192.168.2.82",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.855,
+      "median_gap_s": 8.98,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.854,
+      "median_gap_s": 1036.89,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.82",
+      "dst": "192.168.2.14",
+      "port": 7680,
+      "proto": "tcp",
+      "score": 0.845,
+      "median_gap_s": 8.53,
+      "names": []
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "13.107.43.16+131.253.33.239+204.79.197.239+23.96.180.189",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 2425.37,
+      "names": [
+       "arc.msn.com",
+       "config.edge.skype.com",
+       "edge.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "allowlist": {
+    "units": 17,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.973
+    ],
+    "beacon_flagged": 1,
+    "negatives": 16,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.854,
+     "median_gap_s": 1036.89,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.854,
+      "median_gap_s": 1036.89,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "13.107.43.16+131.253.33.239+204.79.197.239+23.96.180.189",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 2425.37,
+      "names": [
+       "arc.msn.com",
+       "config.edge.skype.com",
+       "edge.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "first_hours": {
+    "1": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.831
+     ],
+     "false_positives": 0,
+     "negatives": 1
+    },
+    "2": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.89
+     ],
+     "false_positives": 0,
+     "negatives": 2
+    },
+    "6": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.929
+     ],
+     "false_positives": 0,
+     "negatives": 4
+    },
+    "12": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.951
+     ],
+     "false_positives": 1,
+     "negatives": 7
+    },
+    "24": {
+     "beacon_flagged": 1,
+     "beacon_scores": [
+      0.973
+     ],
+     "false_positives": 2,
+     "negatives": 16
+    }
+   }
+  }
+ }
+]

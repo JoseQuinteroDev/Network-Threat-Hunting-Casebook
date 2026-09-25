@@ -1,0 +1,8 @@
+# Custom rules for the Network Threat Hunting Casebook. SID range 9100000-9199999 (local use).
+#
+# Written AFTER the statistical hunt of case 02 found the beacon: the behavioural detector finds an
+# unknown channel, the analyst then turns what the channel looks like into a cheap signature that catches
+# the same profile on every other host. This matches the Cobalt Strike malleable HTTP profile used in the
+# case 02 captures (GET /image/<30+ letters a-p>[-].jpg with a spoofed Internet Explorer 8 user agent).
+# One alert per source per hour.
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"NTHC Cobalt Strike HTTP check-in, case 02 profile (/image/<id>.jpg + IE8 UA)"; flow:established,to_server; http.method; content:"GET"; http.uri; content:"/image/"; startswith; pcre:"/^\/image\/[a-p]{30,}-?\.jpg$/"; http.user_agent; content:"MSIE 8.0|3b| Windows NT 6.1|3b| Trident/5.0"; threshold:type limit, track by_src, count 1, seconds 3600; classtype:trojan-activity; sid:9100002; rev:1;)

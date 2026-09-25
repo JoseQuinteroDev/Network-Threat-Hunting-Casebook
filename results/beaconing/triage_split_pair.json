@@ -1,0 +1,352 @@
+{
+ "mode": "pair",
+ "train": [
+  "delay_var_d10_j25",
+  "delay_var_d30_j25",
+  "delay_var_d300_j25",
+  "jit_var_d30_j0"
+ ],
+ "test": [
+  "jit_var_d30_j10",
+  "jit_var_d30_j99",
+  "random_d30_j0",
+  "random_d30_j25",
+  "round_rob_d30_j25"
+ ],
+ "learned_allowlist": [
+  "array808.prod.do.dsp.mp.microsoft.com",
+  "array816.prod.do.dsp.mp.microsoft.com",
+  "ecs.office.com"
+ ],
+ "test_results": [
+  {
+   "capture": "jit_var_d30_j10",
+   "before": {
+    "units": 13,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.986
+    ],
+    "beacon_flagged": 1,
+    "negatives": 12,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.211.229.28",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.89,
+     "names": [
+      "expressapisv2.net",
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   },
+   "after": {
+    "units": 10,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.986
+    ],
+    "beacon_flagged": 1,
+    "negatives": 9,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.211.229.28",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.89,
+     "names": [
+      "expressapisv2.net",
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   }
+  },
+  {
+   "capture": "jit_var_d30_j99",
+   "before": {
+    "units": 14,
+    "beacon_ranks": [
+     3
+    ],
+    "beacon_scores": [
+     0.876
+    ],
+    "beacon_flagged": 1,
+    "negatives": 13,
+    "false_positives": 2,
+    "top_negative": {
+     "src": "192.168.2.82",
+     "dst": "52.113.194.132",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.942,
+     "median_gap_s": 3600.65,
+     "names": [
+      "ecs.office.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.82",
+      "dst": "52.113.194.132",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.942,
+      "median_gap_s": 3600.65,
+      "names": [
+       "ecs.office.com"
+      ]
+     },
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.911,
+      "median_gap_s": 1947.95,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "after": {
+    "units": 11,
+    "beacon_ranks": [
+     1
+    ],
+    "beacon_scores": [
+     0.876
+    ],
+    "beacon_flagged": 1,
+    "negatives": 10,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.211.229.28",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.99,
+     "names": [
+      "expressapisv2.net",
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   }
+  },
+  {
+   "capture": "random_d30_j0",
+   "before": {
+    "units": 17,
+    "beacon_ranks": [
+     12,
+     14
+    ],
+    "beacon_scores": [
+     0.594,
+     0.579
+    ],
+    "beacon_flagged": 0,
+    "negatives": 15,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.804,
+     "median_gap_s": 1308.49,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.804,
+      "median_gap_s": 1308.49,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "after": {
+    "units": 14,
+    "beacon_ranks": [
+     9,
+     11
+    ],
+    "beacon_scores": [
+     0.594,
+     0.579
+    ],
+    "beacon_flagged": 0,
+    "negatives": 12,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "207.164.234.193",
+     "port": 3,
+     "proto": "icmp",
+     "score": 0.796,
+     "median_gap_s": 3409.53,
+     "names": []
+    },
+    "top_fp": []
+   }
+  },
+  {
+   "capture": "random_d30_j25",
+   "before": {
+    "units": 17,
+    "beacon_ranks": [
+     1,
+     8
+    ],
+    "beacon_scores": [
+     0.86,
+     0.674
+    ],
+    "beacon_flagged": 1,
+    "negatives": 15,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.82,
+     "median_gap_s": 1272.08,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.82,
+      "median_gap_s": 1272.08,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "after": {
+    "units": 15,
+    "beacon_ranks": [
+     1,
+     6
+    ],
+    "beacon_scores": [
+     0.86,
+     0.674
+    ],
+    "beacon_flagged": 1,
+    "negatives": 13,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.221.81.186",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.91,
+     "names": [
+      "expressapisv2.net",
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   }
+  },
+  {
+   "capture": "round_rob_d30_j25",
+   "before": {
+    "units": 15,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.982,
+     0.978
+    ],
+    "beacon_flagged": 2,
+    "negatives": 13,
+    "false_positives": 1,
+    "top_negative": {
+     "src": "192.168.2.77",
+     "dst": "20.187.55.34",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.854,
+     "median_gap_s": 1036.89,
+     "names": [
+      "array808.prod.do.dsp.mp.microsoft.com"
+     ]
+    },
+    "top_fp": [
+     {
+      "src": "192.168.2.77",
+      "dst": "20.187.55.34",
+      "port": 443,
+      "proto": "tcp",
+      "score": 0.854,
+      "median_gap_s": 1036.89,
+      "names": [
+       "array808.prod.do.dsp.mp.microsoft.com"
+      ]
+     }
+    ]
+   },
+   "after": {
+    "units": 13,
+    "beacon_ranks": [
+     1,
+     2
+    ],
+    "beacon_scores": [
+     0.982,
+     0.978
+    ],
+    "beacon_flagged": 2,
+    "negatives": 11,
+    "false_positives": 0,
+    "top_negative": {
+     "src": "192.168.2.19",
+     "dst": "3.211.229.28",
+     "port": 443,
+     "proto": "tcp",
+     "score": 0.793,
+     "median_gap_s": 1199.88,
+     "names": [
+      "expressapisv2.net",
+      "www.expressapisv2.net"
+     ]
+    },
+    "top_fp": []
+   }
+  }
+ ]
+}

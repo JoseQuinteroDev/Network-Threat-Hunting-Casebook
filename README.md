@@ -1,6 +1,6 @@
 # Network Threat Hunting Casebook
 
-**Detecting command-and-control channels from network traffic — Zeek, Suricata, Python and KQL, measured against
+**Detecting command-and-control channels from network traffic: Zeek, Suricata, Python and KQL, measured against
 known ground truth.**
 
 Each case starts from a public packet capture with a documented C2 channel inside a day of ordinary traffic, and asks
@@ -10,9 +10,9 @@ every result is reported together with its false positives on normal traffic.
 
 | Case | Threat | What signatures saw | What this project built | Result |
 |---|---|---|---|---|
-| [**01 — DNS tunnelling**](cases/01-dns-tunnel/) | dnscat2 tunnel, 165,517 encoded queries in 24 h through the internal resolvers | ET Open (52,985 rules): **0 alerts** on the tunnel | Python hunt, Zeek script, Suricata rule, KQL hunt | Zeek alerts in **27 s**, Suricata in 69 s; **0 false positives** in 216 h of normal traffic |
+| [**01 — DNS tunnelling**](cases/01-dns-tunnel/) | dnscat2 tunnel, 165,517 encoded queries in 24 h through the internal resolvers | ET Open (52,985 enabled): **0 alerts** on the tunnel | Python hunt, Zeek script, Suricata rule, KQL hunt | Zeek alerts in **27 s**, Suricata in 69 s; **0 false positives** in 216 h of normal traffic |
 | [**02 — C2 beaconing**](cases/02-c2-beaconing/) | Cobalt Strike HTTP beacon in 9 configurations (10 s – 5 min, 0–99 % jitter, redirector rotation) | ET Open: only the initial payload delivery; **nothing on the check-ins** | Statistical beacon detector (timing + size only), channel merging, out-of-sample triage, Suricata rule, KQL hunt | **9 of 9** beacons found; **0 false positives** on held-out captures after triage; flagged within the first hour in 8 of 9 |
-| [**03 — SOC lab: firewall, IDS, EDR and SIEM**](cases/03-soc-lab-firewall-edr-siem/) | End-to-end detection and response in a cloud lab | — | OPNsense with Suricata, Defender for Endpoint, Microsoft Sentinel with custom tables, analytics rules and a network-to-endpoint correlation | See the case |
+| [**03 — SOC lab: firewall, IDS, EDR and SIEM**](cases/03-soc-lab-firewall-edr-siem/) | End-to-end detection and response in a cloud lab | — | Ubuntu gateway (nftables + Suricata inline IPS), Defender for Endpoint, Microsoft Sentinel with custom tables, analytics rules and a network-to-endpoint correlation | See the case |
 
 ## Highlights
 

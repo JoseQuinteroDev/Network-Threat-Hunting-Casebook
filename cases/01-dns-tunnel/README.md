@@ -131,7 +131,7 @@ but they come one or a few at a time. Length and entropy alone would alert; comb
 |---|---|---|
 | [`tools/dns_profile.py`](../../tools/dns_profile.py) | Offline hunt over Zeek `dns.log` (JSON or TSV) | Uses the public suffix list for the base domain; reports every pair with its features, so an analyst sees why something was or was not flagged |
 | [`detections/zeek/dns-tunnel-detect.zeek`](../../detections/zeek/dns-tunnel-detect.zeek) | Inside Zeek, in real time, on live traffic or a capture | Fixed clock-hour windows from packet timestamps; at most one `DNSTunnel::Suspected_Tunnel` notice per client, domain and hour |
-| [`detections/suricata/dns-tunnel.rules`](../../detections/suricata/dns-tunnel.rules) (`sid:9100001`) | Suricata IDS / IPS, and therefore the OPNsense firewall in [case 03](../03-soc-lab-firewall-edr-siem/) | Matches a leftmost label of 30+ hex characters; `threshold` fires once per source per hour after 50 matches |
+| [`detections/suricata/dns-tunnel.rules`](../../detections/suricata/dns-tunnel.rules) (`sid:9100001`) | Suricata IDS / IPS, and therefore the inline IPS on the gateway in [case 03](../03-soc-lab-firewall-edr-siem/) | Matches a leftmost label of 30+ hex characters; `threshold` fires once per source per hour after 50 matches |
 
 Two Zeek pitfalls came up while building the script, and both are documented in its header:
 
@@ -145,7 +145,7 @@ Two Zeek pitfalls came up while building the script, and both are documented in 
 
 | Detection | Tunnel capture (24 h) | Time to first alert | Normal traffic | False positives |
 |---|---|---|---|---:|
-| ET Open (52,985 rules) | Not detected | — | 24 h capture | 118,066 alerts of noise[^noise] |
+| ET Open (52,985 enabled) | Not detected | — | 24 h capture | 118,066 alerts of noise[^noise] |
 | `dns_profile.py` | Flagged (1 of 13 pairs) | Batch hunt | 9 × 24 h = 216 h, 522 pairs | **0** |
 | `dns-tunnel-detect.zeek` | 25 notices, one per clock hour | **27 s** | 24 h, 72,873 queries | **0** |
 | `dns-tunnel.rules` (sid 9100001) | 24 alerts, one per hour | **69 s** | 24 h, 51,068 DNS events | **0** |
